@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './styles.css';
-import logo from '../../assets/logo.png';
 import cordas from '../../assets/test1.png';
 
 function Landing() {
@@ -15,7 +14,7 @@ function Landing() {
                     Alice e Mauricio
                 </p>
 
-                <img src={cordas} className="cordasImg" />
+                <img src={cordas} alt="Imagem" className="cordasImg" />
 
             </header>
 
