@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Rushtick';
+    src: url('../../assets/Rushtick.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header {
+    /* height: 150px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-logo-text {
+    font-family: Rushtick;
+    font-size: 48px;
+    text-align: center;
+    margin: 30px;
+    color: #9D7982;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0 15px;
+}
+
+.options {
+    margin: 15px 0;
+}
+
+.option-link {
+    font-family: Indie Flower;
+    font-size: x-large;
+    /* background-color: rgb(64, 138, 139, 0.7); */
+    background-color: #9CB2A5;
+    padding: 30px;
+    margin: 0 50px 35px 50px;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.main-text {
+    font-family: Indie Flower;
+    font-size: x-large;
+    color: #8BA4B3;
+    text-align: center;
+}
+
+img {
+    height: 50px;
+    /* margin: 10px; */
+}
+
+
+/* .cordasImg {
+  height: 220px;
+ } */
