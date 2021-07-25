@@ -2,22 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './styles.css';
 import cordas from '../../assets/test1.png';
+import Header from '../../components/Header';
 
 function Landing() {
     return (
 
         <div className="App">
-            <header className="header">
-                {/* <img src={logo} alt="Plataforma de estudos" /> */}
-
-                <p className="header-logo-text">
-                    Alice e Mauricio
-                </p>
-
-                <img src={cordas} alt="Imagem" className="cordasImg" />
-
-            </header>
-
+            <Header />
+            
             <main className="main">
                 <p className="main-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium saepe suscipit voluptatum voluptas perspiciatis atque soluta, blanditiis asperiores, repellendus quam sed obcaecati commodi et dicta tenetur quae. Eveniet, iusto aut?
