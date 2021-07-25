@@ -1,15 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './styles.css';
-import cordas from '../../assets/test1.png';
 import Header from '../../components/Header';
+import './styles.css';
 
 function Landing() {
     return (
 
         <div className="App">
             <Header />
-            
+
             <main className="main">
                 <p className="main-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium saepe suscipit voluptatum voluptas perspiciatis atque soluta, blanditiis asperiores, repellendus quam sed obcaecati commodi et dicta tenetur quae. Eveniet, iusto aut?
@@ -21,9 +20,7 @@ function Landing() {
                     </Link>
 
                     <Link to="" className="option-link">
-
                         Lista de Presentes
-
                     </Link>
                 </div>
 
