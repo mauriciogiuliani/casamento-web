@@ -80,3 +80,7 @@ p {}
 .presente-box .presente-actions svg {
     margin: 0px 8px 2px 0px;
 }
+
+a {
+    text-decoration: none;
+}

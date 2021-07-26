@@ -1,9 +1,10 @@
-import { faShoppingCart, faPlusCircle } from '@fortawesome/free-solid-svg-icons';
+import { faPlusCircle, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { Link } from 'react-router-dom';
+import passeioDeBarcoImb from '../../assets/presentes/passeio-de-barco.png';
 import './styles.css';
 
-import passeioDeBarcoImb from '../../assets/presentes/passeio-de-barco.png'
 
 
 
@@ -27,11 +28,11 @@ function ListaPresentes() {
                 <div className="presente-valor">
                     R$ 100,00
                 </div>
-                <a>
+                <Link to="/">
                     <div className="presente-actions" >
                         <FontAwesomeIcon icon={faPlusCircle} size="1x" /> Adicionar
                     </div>
-                </a>
+                </Link>
             </div>
 
 
@@ -46,21 +47,34 @@ function ListaPresentes() {
                 <div className="presente-valor">
                     R$ 100,00
                 </div>
-                <a>
+                <Link to="/">
                     <div className="presente-actions" >
                         <FontAwesomeIcon icon={faPlusCircle} size="1x" /> Adicionar
                     </div>
-                </a>
+                </Link>
             </div>
 
 
-            
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
 
-            <a>
+            {/* <div className="voltar-link">
+                <Link to="/">
+                    <FontAwesomeIcon icon={faArrowLeft} size="sm" />
+                    Voltar
+                </Link>
+            </div> */}
+
+
+
+
+            <Link to="/">
                 <div className="carrinho-box">
                     <FontAwesomeIcon icon={faShoppingCart} size="lg" />
                 </div>
-            </a>
+            </Link>
         </div>
 
 
