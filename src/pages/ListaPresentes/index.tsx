@@ -53,7 +53,17 @@ function ListaPresentes() {
                 </a>
             </div>
 
+
+            
+
+            <a>
+                <div className="carrinho-box">
+                    <FontAwesomeIcon icon={faShoppingCart} size="lg" />
+                </div>
+            </a>
         </div>
+
+
 
 
 
