@@ -16,6 +16,27 @@ p {}
 }
 
 .carrinho-box svg {
+    position: absolute;
+}
+
+.carrinho-box .carrinho-items {
+    background-color: rgb(244 67 54);
+    border-radius: 100px;
+    height: 25px;
+    width: 25px;
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: -25px;
+    right: -15px;
+    font-weight: 500;
+    font-size: 14px;
+    align-items: center;
+}
+
+.carrinho-box svg {
     color: #FFF;
 }
 
@@ -83,4 +104,54 @@ p {}
 
 a {
     text-decoration: none;
+}
+
+.alert-closed {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.alert-closed .alert-adicionar-item {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.alert-opened {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    opacity: 1;
+    transition: opacity 1s;
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.alert-closed .alert-adicionar-item,
+.alert-opened .alert-adicionar-item {
+    background-color: #FFF;
+    position: fixed;
+    top: 15px;
+    border-radius: 5px;
+    height: 100px;
+    box-shadow: inset 0px 0px 0 4px rgb(156 178 165 / 30%);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9999;
+}
+
+.alert-adicionar-item>svg {
+    margin-top: 10px;
+    color: #9CB2A5;
+}
+
+.alert-adicionar-item>p {
+    color: #9CB2A5;
+    margin-top: 8px;
 }

@@ -1,6 +1,6 @@
-import { faPlusCircle, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faPlusCircle, faShoppingCart, faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import passeioDeBarcoImb from '../../assets/presentes/passeio-de-barco.png';
 import './styles.css';
@@ -10,7 +10,15 @@ import './styles.css';
 
 
 function ListaPresentes() {
+
+    const [carrinhoSize, setCarrinhoSize] = useState(0);
+
+    const [alertClass, setAlertClass] = useState('alert-closed');
+
+    // let alertClass = ';
+
     return (
+
 
 
         <div>
@@ -28,11 +36,20 @@ function ListaPresentes() {
                 <div className="presente-valor">
                     R$ 100,00
                 </div>
-                <Link to="/">
+                <a href="#" onClick={
+                    () => {
+                        setAlertClass('alert-opened');
+                        setCarrinhoSize(carrinhoSize + 1);
+
+                        setTimeout(() => {
+                            setAlertClass('alert-closed');
+                        }, 2000)
+                    }
+                }>
                     <div className="presente-actions" >
                         <FontAwesomeIcon icon={faPlusCircle} size="1x" /> Adicionar
                     </div>
-                </Link>
+                </a>
             </div>
 
 
@@ -72,10 +89,26 @@ function ListaPresentes() {
 
             <Link to="/">
                 <div className="carrinho-box">
+                    <div className="carrinho-items">
+                        {carrinhoSize}
+                    </div>
                     <FontAwesomeIcon icon={faShoppingCart} size="lg" />
                 </div>
             </Link>
+
+            <div className={alertClass}>
+                <div className="alert-adicionar-item">
+                    <FontAwesomeIcon icon={faCheck} size="3x" />
+
+                    <p>
+                        Presente adicionado ao Carrinho!
+                    </p>
+
+                </div>
+            </div>
         </div>
+
+
 
 
 
