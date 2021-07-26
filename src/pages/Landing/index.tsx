@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../../components/Header';
 import './styles.css';
 
 function Landing() {
     return (
 
         <div className="App">
-            <Header />
+            
 
             <main className="main">
                 <p className="main-text">
@@ -15,7 +14,7 @@ function Landing() {
                 </p>
 
                 <div className="options">
-                    <Link to="" className="option-link">
+                    <Link to="Presenca" className="option-link">
                         Confirmar Presença
                     </Link>
 
