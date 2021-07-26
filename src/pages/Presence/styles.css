@@ -12,7 +12,8 @@
     margin: 15px 30px;
 }
 
-.input-block label {
+
+/* .input-block label {
     font-size: large;
     font-weight: 700;
     font-family: Indie Flower;
@@ -37,7 +38,7 @@
 
 .input-block input:focus-within {
     padding-left: 15px;
-}
+} */
 
 .actions-box {
     margin: 15px 0;
@@ -82,7 +83,7 @@
 .contatos-box {
     display: flex;
     justify-content: center;
-    margin-top: 15px;
+    margin: 15px;
 }
 
 .contatos-box p {
@@ -90,16 +91,22 @@
     font-size: large;
     text-align: center;
     color: #9CB2A5;
-    /* line-height: 10px; */
 }
 
 .contatos-box a {
     text-decoration: none;
-    color: #9CB2A5;
+    color: #8BA4B3;
+    font-size: 22px;
 }
 
 .contatos-box svg {
     padding-right: 5px;
+    /* padding-top: 5px; */
+}
+
+.actions-box svg {
+    padding-right: 5px;
+    padding-top: 5px;
 }
 
 

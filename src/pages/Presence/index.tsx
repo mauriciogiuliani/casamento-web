@@ -3,8 +3,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './styles.css';
 
-import { faEnvelope, } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+
+
 
 
 function Presence() {
@@ -17,36 +19,55 @@ function Presence() {
             </p>
 
 
+
+
+            {/* <div className="input-block">
+                <label>Nome Completo</label>
+                <input type="text" id="nomeCompletoConvidado" />
+            </div> */}
+
+            <div className="actions-box">
+
+
+                {/* <Link to="/" className="voltar-link">
+                    Voltar
+                </Link> */}
+
+                <a href="mailto:severinas.cerimonial@gmail.com" className="voltar-link">
+                    <FontAwesomeIcon icon={faEnvelope} />
+                    E-Mail
+                </a>
+
+
+                <a href="https://wa.me/5551991651225" className="confimar-link">
+                    <FontAwesomeIcon icon={faWhatsapp} />
+                    What'sApp
+                </a>
+            </div>
+
+
             <div className="contatos-box">
 
                 <p>
-                    <a href="https://wa.me/5551991651225">
-                        <FontAwesomeIcon icon={faWhatsapp} />
-                        (51) 99165-1225
-                    </a>
+
+                    (51) 99165-1225
+
 
                     <br></br>
-                    <a href="mailto:severinas.cerimonial@gmail.com">
-                        <FontAwesomeIcon icon={faEnvelope} />
-                        severinas.cerimonial@gmail.com</a>
+
+
+                    severinas.cerimonial@gmail.com
+
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <Link to="/">
+                        <FontAwesomeIcon icon={faArrowLeft} size="sm"/> 
+                        Voltar
+                    </Link>
+
                 </p>
             </div>
-
-            <div className="input-block">
-                <label>Nome Completo</label>
-                <input type="text" id="nomeCompletoConvidado" />
-            </div>
-
-            <div className="actions-box">
-                <Link to="/" className="voltar-link">
-                    Voltar
-                </Link>
-
-                <Link to="" className="confimar-link">
-                    Confirmar
-                </Link>
-            </div>
-
 
 
         </main>
