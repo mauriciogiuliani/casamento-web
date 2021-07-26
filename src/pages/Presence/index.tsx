@@ -15,7 +15,7 @@ function Presence() {
 
         <main className="main">
             <p className="main-text">
-                Confirme sua presença até o dia <b>10/10/2021</b>, usando o formulário abaixo ou entre em contato com o cerimionial por meio de What's App ou E-mail
+                Confirme sua presença até o dia <b>10/10/2021</b>, entrando em contato com o cerimionial por meio de What's App ou E-mail
             </p>
 
 
