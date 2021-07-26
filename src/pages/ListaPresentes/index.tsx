@@ -36,7 +36,9 @@ function ListaPresentes() {
                 <div className="presente-valor">
                     R$ 100,00
                 </div>
-                <a href="#" onClick={
+
+                {/* <a href="#" > */}
+                <div className="presente-actions" onClick={
                     () => {
                         setAlertClass('alert-opened');
                         setCarrinhoSize(carrinhoSize + 1);
@@ -45,11 +47,10 @@ function ListaPresentes() {
                             setAlertClass('alert-closed');
                         }, 2000)
                     }
-                }>
-                    <div className="presente-actions" >
-                        <FontAwesomeIcon icon={faPlusCircle} size="1x" /> Adicionar
-                    </div>
-                </a>
+                } >
+                    <FontAwesomeIcon icon={faPlusCircle} size="1x" /> Adicionar
+                </div>
+                {/* </a> */}
             </div>
 
 

@@ -96,6 +96,7 @@ p {}
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .presente-box .presente-actions svg {
