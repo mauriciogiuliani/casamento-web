@@ -20,19 +20,27 @@
 }
 
 .input-block input {
-    width: 100%;
+    width: 95%;
     height: 50px;
     border: 1px solid #9CB2A5;
     border-radius: 5px;
     font-family: Indie Flower;
     font-size: large;
     color: #9CB2A5;
+    font-weight: 600;
+
+    
     
 }
 
 .input-block input:focus{
-    /* border: 1px solid #9CB2A5;     */
     outline: none;
+    
+}
+
+
+.input-block input:focus-within {
+    padding-left: 15px;
 }
 
 .actions-box {
@@ -79,6 +87,7 @@
 .contatos-box {
     display: flex;
     justify-content: center;
+    margin-top: 15px;
 }
 
 .contatos-box p {
@@ -86,8 +95,15 @@
     font-size: large;
     text-align: center;
     color: #9CB2A5;
+    
     /* line-height: 10px; */
 }
+
+.contatos-box a {
+    text-decoration: none;
+    color: #9CB2A5;
+}
+
 
 .contatos-box svg {
     padding-right: 5px;

@@ -10,7 +10,7 @@ function Landing() {
 
             <main className="main">
                 <p className="main-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium saepe suscipit voluptatum voluptas perspiciatis atque soluta, blanditiis asperiores, repellendus quam sed obcaecati commodi et dicta tenetur quae. Eveniet, iusto aut?
+                    Uma nova fase de nossas vidas irá iniciar e existem pessoas que consideramos especiais para compartilhar conosco tantos momentos que virão. Por isso sua presença é muito importante para nós.
                 </p>
 
                 <div className="options">

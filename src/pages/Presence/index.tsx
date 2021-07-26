@@ -13,20 +13,24 @@ function Presence() {
 
         <main className="main">
             <p className="main-text">
-                Confirme sua presença abaixo ou entre em contato com a cerimonialista por meio de What's App ou E-mail
+                Confirme sua presença até o dia <b>10/10/2021</b>, usando o formulário abaixo ou entre em contato com o cerimionial por meio de What's App ou E-mail
             </p>
+
 
             <div className="contatos-box">
 
                 <p>
-                    <FontAwesomeIcon icon={faWhatsapp} />
-                    (51) 99165-1225
+                    <a href="https://wa.me/5551991651225">
+                        <FontAwesomeIcon icon={faWhatsapp} />
+                        (51) 99165-1225
+                    </a>
+
                     <br></br>
-                    <FontAwesomeIcon icon={faEnvelope} />
-                    severinas.ceremonial@gmail.com
+                    <a href="mailto:severinas.cerimonial@gmail.com">
+                        <FontAwesomeIcon icon={faEnvelope} />
+                        severinas.cerimonial@gmail.com</a>
                 </p>
             </div>
-
 
             <div className="input-block">
                 <label>Nome Completo</label>
@@ -42,6 +46,7 @@ function Presence() {
                     Confirmar
                 </Link>
             </div>
+
 
 
         </main>
