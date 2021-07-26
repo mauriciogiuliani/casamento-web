@@ -19,20 +19,7 @@ function Presence() {
             </p>
 
 
-
-
-            {/* <div className="input-block">
-                <label>Nome Completo</label>
-                <input type="text" id="nomeCompletoConvidado" />
-            </div> */}
-
             <div className="actions-box">
-
-
-                {/* <Link to="/" className="voltar-link">
-                    Voltar
-                </Link> */}
-
                 <a href="mailto:severinas.cerimonial@gmail.com" className="voltar-link">
                     <FontAwesomeIcon icon={faEnvelope} />
                     E-Mail
@@ -44,7 +31,6 @@ function Presence() {
                     What'sApp
                 </a>
             </div>
-
 
             <div className="contatos-box">
 
@@ -61,8 +47,9 @@ function Presence() {
                     <br></br>
                     <br></br>
                     <br></br>
+                    <br></br>
                     <Link to="/">
-                        <FontAwesomeIcon icon={faArrowLeft} size="sm"/> 
+                        <FontAwesomeIcon icon={faArrowLeft} size="sm" />
                         Voltar
                     </Link>
 
