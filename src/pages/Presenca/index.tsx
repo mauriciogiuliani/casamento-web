@@ -9,11 +9,11 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 
 
-function Presence() {
+function Presenca() {
     return (
 
 
-        <main className="main">
+        <div className="main">
             <p className="main-text">
                 Confirme sua presença até o dia <b>10/10/2021</b> entrando em contato com o cerimionial através de E-mail ou What's App.
             </p>
@@ -48,6 +48,7 @@ function Presence() {
                     <br></br>
                     <br></br>
                     <br></br>
+                    
                     <Link to="/">
                         <FontAwesomeIcon icon={faArrowLeft} size="sm" />
                         Voltar
@@ -57,7 +58,7 @@ function Presence() {
             </div>
 
 
-        </main>
+        </div>
 
 
 
@@ -65,4 +66,4 @@ function Presence() {
     );
 }
 
-export default Presence;
+export default Presenca;
