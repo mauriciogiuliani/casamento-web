@@ -1,9 +1,9 @@
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart, faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './styles.css';
 
-import  passeioDeBarcoImb from '../../assets/presentes/passeio-de-barco.png'
+import passeioDeBarcoImb from '../../assets/presentes/passeio-de-barco.png'
 
 
 
@@ -27,9 +27,11 @@ function ListaPresentes() {
                 <div className="presente-valor">
                     R$ 100,00
                 </div>
-                <div className="presente-actions">
-                    Adicionar
-                </div>
+                <a>
+                    <div className="presente-actions" >
+                        <FontAwesomeIcon icon={faPlusCircle} size="1x" /> Adicionar
+                    </div>
+                </a>
             </div>
 
 
@@ -44,19 +46,14 @@ function ListaPresentes() {
                 <div className="presente-valor">
                     R$ 100,00
                 </div>
-                <div className="presente-actions">
-                    Adicionar
-                </div>
+                <a>
+                    <div className="presente-actions" >
+                        <FontAwesomeIcon icon={faPlusCircle} size="1x" /> Adicionar
+                    </div>
+                </a>
             </div>
 
-            <a>
-                <div className="carrinho-box">
-                    <FontAwesomeIcon icon={faShoppingCart} size="lg" />
-                </div>
-            </a>
         </div>
-
-
 
 
 
