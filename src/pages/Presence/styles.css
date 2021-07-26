@@ -26,18 +26,14 @@
     border-radius: 5px;
     font-family: Indie Flower;
     font-size: large;
-    color: #9CB2A5;
+    color: #adadad;
     font-weight: 600;
-
-    
-    
+    padding-left: 15px;
 }
 
-.input-block input:focus{
+.input-block input:focus {
     outline: none;
-    
 }
-
 
 .input-block input:focus-within {
     padding-left: 15px;
@@ -64,7 +60,6 @@
     justify-content: center;
     text-decoration: none;
     width: 100px;
-
 }
 
 .confimar-link {
@@ -95,7 +90,6 @@
     font-size: large;
     text-align: center;
     color: #9CB2A5;
-    
     /* line-height: 10px; */
 }
 
@@ -103,7 +97,6 @@
     text-decoration: none;
     color: #9CB2A5;
 }
-
 
 .contatos-box svg {
     padding-right: 5px;
