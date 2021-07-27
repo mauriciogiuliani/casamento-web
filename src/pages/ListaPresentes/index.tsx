@@ -1,6 +1,6 @@
 import { faCheck, faPlusCircle, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import passeioDeBarcoImb from '../../assets/presentes/passeio-de-barco.png';
 import './styles.css';
