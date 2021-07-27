@@ -50,7 +50,7 @@ function ListaPresentes() {
 
             <div className="presente-box">
                 <div className="presente-header">
-                    Passeio de Barco
+                    Jantar Romântico
                 </div>
                 <div className="presente-foto">
                     <img src={passeioDeBarcoImb} alt="Passeio de Barco" />

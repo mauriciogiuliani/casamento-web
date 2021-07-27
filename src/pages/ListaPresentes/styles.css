@@ -6,7 +6,7 @@ p {}
     right: 0;
     margin: 25px;
     border-radius: 100px;
-    background-color: #8BA4B3;
+    background-color: #9CB2A5;
     height: 65px;
     width: 65px;
     display: flex;
@@ -43,12 +43,12 @@ p {}
 .presente-box {
     font-family: Indie Flower;
     background-color: #FFF;
-    width: 80%;
+    width: 70%;
     margin: auto;
     margin-bottom: 50px;
-    border: 2px solid rgb(156 178 165 / 70%);
+    border: 2px solid rgb(139 164 179 / 50%);
     border-radius: 50px;
-    box-shadow: -1px 0px 5px 1px rgb(156 178 165 / 40%);
+    box-shadow: -1px 0px 5px 1px rgb(139 164 179 / 30%);
 }
 
 .presente-box>div {
@@ -61,28 +61,28 @@ p {}
 .presente-box .presente-header {
     font-size: x-large;
     font-weight: 600;
-    color: #9CB2A5;
+    color: #9cb2be;
     margin: 15px;
 }
 
 .presente-box .presente-foto>img {
     height: 125px;
     width: 125px;
-    border-radius: 100px;
-    box-shadow: -1px 1px 8px 0px rgb(0 0 0 / 40%);
+    border-radius: 30px;
+    box-shadow: -1px 1px 12px 0px rgb(139 164 179 / 80%);
 }
 
 .presente-box .presente-valor {
     font-size: large;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
-    color: #9CB2A5;
+    color: #8ba4b3;
 }
 
 .presente-box .presente-actions {
     margin: -2px;
-    background-color: rgb(156 178 165 / 85%);
+    background-color: rgb(139 164 179 / 85%);
     height: 50px;
     color: #FFF;
     font-size: x-large;
@@ -129,10 +129,10 @@ a {
 
 .alert-closed .alert-adicionar-item,
 .alert-opened .alert-adicionar-item {
-    background-color: #8BA4B3;
+    background-color: #9CB2A5;
     border-radius: 5px;
     height: 100px;
-    box-shadow: 0px 0px 10px 20px rgb(139 164 179 / 25%);
+    box-shadow: 0px 0px 10px 20px rgba(156, 178, 165, 0.25);
     width: 80%;
     display: flex;
     flex-direction: column;
