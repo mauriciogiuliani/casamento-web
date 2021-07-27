@@ -1,7 +1,6 @@
-import { faCheck, faPlusCircle, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faCheck, faPlusCircle, faShoppingBag, faShoppingCart, faTrash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import passeioDeBarcoImb from '../../assets/presentes/passeio-de-barco.png';
 import './styles.css';
 
@@ -13,6 +12,15 @@ function ListaPresentes() {
     const [carrinhoSize, setCarrinhoSize] = useState(0);
     const [alertClass, setAlertClass] = useState('alert-closed');
 
+    const [cartClass, setCartClass] = useState('carrinho-closed');
+
+    const openCart = () => {
+        setCartClass('carrinho-opened');
+    }
+
+    const closeCart = () => {
+        setCartClass('carrinho-closed');
+    }
 
     const addToCart = () => {
         setAlertClass('alert-opened');
@@ -75,14 +83,14 @@ function ListaPresentes() {
 
 
 
-            <Link to="/">
-                <div className="carrinho-box">
-                    <div className="carrinho-items">
-                        {carrinhoSize}
-                    </div>
-                    <FontAwesomeIcon icon={faShoppingCart} size="lg" />
+
+            <div className="carrinho-box" onClick={openCart}>
+                <div className="carrinho-items">
+                    {carrinhoSize}
                 </div>
-            </Link>
+                <FontAwesomeIcon icon={faShoppingCart} size="lg" />
+            </div>
+
 
             <div className={alertClass}>
                 <div className="alert-adicionar-item">
@@ -92,6 +100,31 @@ function ListaPresentes() {
                         Presente adicionado ao Carrinho!
                     </p>
 
+                </div>
+            </div>
+
+            <div className={cartClass}>
+                <div className="carrinho-opened-box">
+                    <div className="carrinho-opened-header">
+
+                        Carrinho de Presentes
+                    </div>
+
+                    <div className="carrinho-opened-presentes">
+                        B
+                    </div>
+
+                    <div className="carrinho-opened-actions">
+                        <div className="carrinho-opened-actions-esvaziar">
+                            <FontAwesomeIcon icon={faTrash} size="1x" />
+                            Esvaziar Carrinho
+                        </div>
+
+                        <div className="carrinho-opened-actions-finalizar" onClick={closeCart}>
+                            <FontAwesomeIcon icon={faShoppingBag} size="1x" />
+                            Finalizar Compra
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
