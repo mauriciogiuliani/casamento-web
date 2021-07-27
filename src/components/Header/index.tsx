@@ -7,7 +7,6 @@ function Header() {
     return (
 
             <header className="header">
-                {/* <img src={logo} alt="Plataforma de estudos" /> */}
 
                 <p className="header-logo-text">
                     Alice e Mauricio

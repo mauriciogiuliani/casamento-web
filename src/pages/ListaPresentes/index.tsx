@@ -1,6 +1,6 @@
-import { faPlusCircle, faShoppingCart, faCheck } from '@fortawesome/free-solid-svg-icons';
+import { faCheck, faPlusCircle, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import passeioDeBarcoImb from '../../assets/presentes/passeio-de-barco.png';
 import './styles.css';
@@ -10,17 +10,20 @@ import './styles.css';
 
 
 function ListaPresentes() {
-
     const [carrinhoSize, setCarrinhoSize] = useState(0);
-
     const [alertClass, setAlertClass] = useState('alert-closed');
 
-    // let alertClass = ';
+
+    const addToCart = () => {
+        setAlertClass('alert-opened');
+        setCarrinhoSize(carrinhoSize + 1);
+
+        setTimeout(() => {
+            setAlertClass('alert-closed');
+        }, 2000)
+    }
 
     return (
-
-
-
         <div>
             <p className="main-text">
                 Em nossa Lua de Mel iremos para Ilhabela / SP.
@@ -37,20 +40,10 @@ function ListaPresentes() {
                     R$ 100,00
                 </div>
 
-                {/* <a href="#" > */}
-                <div className="presente-actions" onClick={
-                    () => {
-                        setAlertClass('alert-opened');
-                        setCarrinhoSize(carrinhoSize + 1);
 
-                        setTimeout(() => {
-                            setAlertClass('alert-closed');
-                        }, 2000)
-                    }
-                } >
+                <div className="presente-actions" onClick={addToCart}>
                     <FontAwesomeIcon icon={faPlusCircle} size="1x" /> Adicionar
                 </div>
-                {/* </a> */}
             </div>
 
 
@@ -65,11 +58,11 @@ function ListaPresentes() {
                 <div className="presente-valor">
                     R$ 100,00
                 </div>
-                <Link to="/">
-                    <div className="presente-actions" >
-                        <FontAwesomeIcon icon={faPlusCircle} size="1x" /> Adicionar
-                    </div>
-                </Link>
+
+
+                <div className="presente-actions" onClick={addToCart}>
+                    <FontAwesomeIcon icon={faPlusCircle} size="1x" /> Adicionar
+                </div>
             </div>
 
 
@@ -78,12 +71,6 @@ function ListaPresentes() {
             <br></br>
             <br></br>
 
-            {/* <div className="voltar-link">
-                <Link to="/">
-                    <FontAwesomeIcon icon={faArrowLeft} size="sm" />
-                    Voltar
-                </Link>
-            </div> */}
 
 
 

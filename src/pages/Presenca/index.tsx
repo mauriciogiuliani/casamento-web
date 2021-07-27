@@ -1,15 +1,19 @@
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faArrowLeft, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './styles.css';
 
-import { faEnvelope, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 
 
 
 function Presenca() {
+    useEffect(() => {
+        window.scrollTo(0,0);
+    });
+    
     return (
 
 

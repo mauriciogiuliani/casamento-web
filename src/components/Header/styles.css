@@ -1,5 +1,3 @@
-
-
 .header {
     display: flex;
     flex-direction: column;
@@ -12,6 +10,7 @@
     text-align: center;
     margin: 35px 15px;
     color: #8BA4B3;
+    font-weight: 600;
 }
 
 img {
