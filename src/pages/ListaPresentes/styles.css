@@ -1,4 +1,6 @@
-p {}
+.no-scroll {
+    position: fixed;
+}
 
 .carrinho-box {
     position: fixed;
@@ -167,7 +169,7 @@ a {
     width: 90%;
     box-shadow: 0px 0px 10px 20px rgb(0 0 0 / 10%);
     position: fixed;
-    top: 30px;
+    top: 10px;
     margin: 28px 30px;
     background-color: #FFF;
     height: 90%;
@@ -182,6 +184,64 @@ a {
     display: flex;
     justify-content: space-between;
 }
+
+.carrinho-opened-header {
+    font-family: Indie Flower;
+    font-size: x-large;
+    text-align: center;
+    font-weight: 600;
+    color: #9cb2be;
+    margin: 35px;
+}
+
+.carrinho-opened-presentes {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0px 20px;
+}
+
+.carrinho-opened-presentes-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.carrinho-opened-presentes-item-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px dashed #9cb2be;
+    margin: 0px 5px;
+}
+
+.carrinho-opened-presentes-items {
+    margin: 0px 5px;
+}
+
+.carrinho-opened-presentes-item-header>h2 {
+    font-family: Indie Flower;
+    font-size: large;
+    text-align: center;
+    color: #9cb2be;
+    font-weight: 600;
+}
+
+.carrinho-opened-presentes-item>div {
+    font-family: Indie Flower;
+    font-size: large;
+    text-align: center;
+    color: #9cb2be;
+}
+
+
+/* .carrinho-opened-presentes-item-header {} */
+
+.carrinho-opened-presentes-item-quantidade {}
+
+.carrinho-opened-presentes-item-descricao {}
+
+.carrinho-opened-presentes-item-total {}
 
 .carrinho-opened-actions-finalizar {
     font-family: Indie Flower;

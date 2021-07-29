@@ -14,12 +14,18 @@ function ListaPresentes() {
 
     const [cartClass, setCartClass] = useState('carrinho-closed');
 
+    const [cartOpened, setCartOpened] = useState(false);
+
+
+
     const openCart = () => {
         setCartClass('carrinho-opened');
+        setCartOpened(true);
     }
 
     const closeCart = () => {
         setCartClass('carrinho-closed');
+        setCartOpened(false);
     }
 
     const addToCart = () => {
@@ -32,7 +38,7 @@ function ListaPresentes() {
     }
 
     return (
-        <div>
+        <div className={cartOpened ? 'no-scroll' : ''}>
             <p className="main-text">
                 Em nossa Lua de Mel iremos para Ilhabela / SP.
             </p>
@@ -103,6 +109,8 @@ function ListaPresentes() {
                 </div>
             </div>
 
+
+
             <div className={cartClass}>
                 <div className="carrinho-opened-box">
                     <div className="carrinho-opened-header">
@@ -111,7 +119,76 @@ function ListaPresentes() {
                     </div>
 
                     <div className="carrinho-opened-presentes">
-                        B
+                        <div className="carrinho-opened-presentes-item-header">
+
+
+                            <h2>
+                                Qtd
+                            </h2>
+
+                            <h2>
+                                Descrição
+                            </h2>
+
+                            <h2>
+                                Valor
+                            </h2>
+                        </div>
+
+                        <div className="carrinho-opened-presentes-items">
+                            <div className="carrinho-opened-presentes-item">
+                                <div className="carrinho-opened-presentes-item-quantidade">
+                                    2
+                                </div>
+                                <div className="carrinho-opened-presentes-item-descricao">
+                                    Passeio de Barco
+                                </div>
+                                <div className="carrinho-opened-presentes-item-total">
+                                    R$ 200,00
+                                </div>
+                            </div>
+
+
+                            <div className="carrinho-opened-presentes-item">
+                                <div className="carrinho-opened-presentes-item-quantidade">
+                                    2
+                                </div>
+                                <div className="carrinho-opened-presentes-item-descricao">
+                                    Passeio de Barco
+                                </div>
+                                <div className="carrinho-opened-presentes-item-total">
+                                    R$ 200,00
+                                </div>
+                            </div>
+
+
+                            <div className="carrinho-opened-presentes-item">
+                                <div className="carrinho-opened-presentes-item-quantidade">
+                                    2
+                                </div>
+                                <div className="carrinho-opened-presentes-item-descricao">
+                                    Passeio de Barco
+                                </div>
+                                <div className="carrinho-opened-presentes-item-total">
+                                    R$ 200,00
+                                </div>
+                            </div>
+
+
+                            <div className="carrinho-opened-presentes-item">
+                                <div className="carrinho-opened-presentes-item-quantidade">
+                                    2
+                                </div>
+                                <div className="carrinho-opened-presentes-item-descricao">
+                                    Passeio de Barco
+                                </div>
+                                <div className="carrinho-opened-presentes-item-total">
+                                    R$ 200,00
+                                </div>
+                            </div>
+
+
+                        </div>
                     </div>
 
                     <div className="carrinho-opened-actions">
