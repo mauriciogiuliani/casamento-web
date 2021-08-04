@@ -1,4 +1,4 @@
-import { faCheck, faPlusCircle, faShoppingBag, faShoppingCart, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faCheck, faPlusCircle, faMinusCircle, faShoppingBag, faShoppingCart, faTrash, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import passeioDeBarcoImb from '../../assets/presentes/passeio-de-barco.png';
@@ -9,6 +9,22 @@ import './styles.css';
 
 
 function ListaPresentes() {
+    // TEMP
+    const [presenteCount, setPresenteCount] = useState(0);
+
+    const addPresente = () => {
+        setPresenteCount(presenteCount + 1);
+        setCarrinhoSize(carrinhoSize + 1);
+    }
+
+    const removePresente = () => {
+        if (presenteCount > 0) {
+            setPresenteCount(presenteCount - 1);
+        }
+
+    }
+
+
     const [carrinhoSize, setCarrinhoSize] = useState(0);
     const [alertClass, setAlertClass] = useState('alert-closed');
 
@@ -17,24 +33,29 @@ function ListaPresentes() {
     const [cartOpened, setCartOpened] = useState(false);
 
 
+    // Carrinho Box
+    const [cartButtonClass, setCartButtonClass] = useState('carrinho-box');
+
 
     const openCart = () => {
         setCartClass('carrinho-opened');
+        setCartButtonClass('carrinho-box-hidden')
         setCartOpened(true);
     }
 
     const closeCart = () => {
         setCartClass('carrinho-closed');
+        setCartButtonClass('carrinho-box')
         setCartOpened(false);
     }
 
     const addToCart = () => {
-        setAlertClass('alert-opened');
+        // setAlertClass('alert-opened');
         setCarrinhoSize(carrinhoSize + 1);
 
-        setTimeout(() => {
-            setAlertClass('alert-closed');
-        }, 2000)
+        // setTimeout(() => {
+        //     setAlertClass('alert-closed');
+        // }, 2000)
     }
 
     return (
@@ -55,14 +76,16 @@ function ListaPresentes() {
                 </div>
 
 
-                <div className="presente-actions" onClick={addToCart}>
-                    <FontAwesomeIcon icon={faPlusCircle} size="1x" /> Adicionar
+                <div className="presente-actions">
+                    <FontAwesomeIcon icon={faMinusCircle} size="1x" onClick={removePresente} />
+                    {presenteCount}
+                    <FontAwesomeIcon icon={faPlusCircle} size="1x" onClick={addPresente} />
                 </div>
             </div>
 
 
 
-            <div className="presente-box">
+            {/* <div className="presente-box">
                 <div className="presente-header">
                     Jantar Romântico
                 </div>
@@ -74,10 +97,10 @@ function ListaPresentes() {
                 </div>
 
 
-                <div className="presente-actions" onClick={addToCart}>
+                <div className="presente-actions">
                     <FontAwesomeIcon icon={faPlusCircle} size="1x" /> Adicionar
                 </div>
-            </div>
+            </div> */}
 
 
             <br></br>
@@ -90,7 +113,7 @@ function ListaPresentes() {
 
 
 
-            <div className="carrinho-box" onClick={openCart}>
+            <div className={cartButtonClass} onClick={openCart}>
                 <div className="carrinho-items">
                     {carrinhoSize}
                 </div>
@@ -98,7 +121,7 @@ function ListaPresentes() {
             </div>
 
 
-            <div className={alertClass}>
+            {/* <div className={alertClass}>
                 <div className="alert-adicionar-item">
                     <FontAwesomeIcon icon={faCheck} size="3x" />
 
@@ -107,7 +130,7 @@ function ListaPresentes() {
                     </p>
 
                 </div>
-            </div>
+            </div> */}
 
 
 
@@ -122,17 +145,17 @@ function ListaPresentes() {
                         <div className="carrinho-opened-presentes-item-header">
 
 
-                            <h2>
+                            <h3>
                                 Qtd
-                            </h2>
+                            </h3>
 
-                            <h2>
+                            <h3>
                                 Descrição
-                            </h2>
+                            </h3>
 
-                            <h2>
+                            <h3>
                                 Valor
-                            </h2>
+                            </h3>
                         </div>
 
                         <div className="carrinho-opened-presentes-items">
@@ -144,7 +167,7 @@ function ListaPresentes() {
                                     Passeio de Barco
                                 </div>
                                 <div className="carrinho-opened-presentes-item-total">
-                                    R$ 200,00
+                                    200,00
                                 </div>
                             </div>
 
@@ -157,7 +180,7 @@ function ListaPresentes() {
                                     Passeio de Barco
                                 </div>
                                 <div className="carrinho-opened-presentes-item-total">
-                                    R$ 200,00
+                                    200,00
                                 </div>
                             </div>
 
@@ -170,7 +193,7 @@ function ListaPresentes() {
                                     Passeio de Barco
                                 </div>
                                 <div className="carrinho-opened-presentes-item-total">
-                                    R$ 200,00
+                                    200,00
                                 </div>
                             </div>
 
@@ -183,25 +206,63 @@ function ListaPresentes() {
                                     Passeio de Barco
                                 </div>
                                 <div className="carrinho-opened-presentes-item-total">
-                                    R$ 200,00
+                                    200,00
                                 </div>
                             </div>
+                            <div className="carrinho-opened-presentes-item">
+                                <div className="carrinho-opened-presentes-item-quantidade">
+                                    2
+                                </div>
+                                <div className="carrinho-opened-presentes-item-descricao">
+                                    Passeio de Barco
+                                </div>
+                                <div className="carrinho-opened-presentes-item-total">
+                                    200,00
+                                </div>
+                            </div>
+                            <div className="carrinho-opened-presentes-item">
+                                <div className="carrinho-opened-presentes-item-quantidade">
+                                    2
+                                </div>
+                                <div className="carrinho-opened-presentes-item-descricao">
+                                    Passeio de Barco
+                                </div>
+                                <div className="carrinho-opened-presentes-item-total">
+                                    200,00
+                                </div>
+                            </div>
+
 
 
                         </div>
+
+                        <div className="carrinho-opened-presentes-items-footer">
+                            Total R$ 500,00
+                        </div>
+
                     </div>
 
                     <div className="carrinho-opened-actions">
                         <div className="carrinho-opened-actions-esvaziar">
                             <FontAwesomeIcon icon={faTrash} size="1x" />
-                            Esvaziar Carrinho
+                            Esvaziar
                         </div>
 
                         <div className="carrinho-opened-actions-finalizar" onClick={closeCart}>
                             <FontAwesomeIcon icon={faShoppingBag} size="1x" />
-                            Finalizar Compra
+                            Finalizar
                         </div>
+
+
                     </div>
+
+                    <p className="fechar-link" onClick={closeCart}>
+                        <FontAwesomeIcon icon={faArrowLeft} size="sm" />
+                        Voltar
+                    </p>
+
+                    <br></br>
+
                 </div>
             </div>
         </div>
