@@ -1,0 +1,13 @@
+[{
+        "nome": "Passeio de Barco",
+        "imagem": "../../assets/presentes/passeio-de-barco.png",
+        "valor": 200,
+        "quantidade": 0
+    },
+    {
+        "nome": "Jantar Romatico",
+        "imagem": "public/presentes/passeio-de-barco.png",
+        "valor": 500,
+        "quantidade": 0
+    }
+]

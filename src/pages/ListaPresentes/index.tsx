@@ -1,14 +1,25 @@
-import { faCheck, faPlusCircle, faMinusCircle, faShoppingBag, faShoppingCart, faTrash, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faShoppingBag, faTrash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react';
-import passeioDeBarcoImb from '../../assets/presentes/passeio-de-barco.png';
+import React, { createContext, useState } from 'react';
+import Cart from '../../components/Cart';
+import Presente, { Gift } from '../../components/Presente';
+import listaDePresentes from './presentes.json';
 import './styles.css';
 
 
 
 
 
+
 function ListaPresentes() {
+    // const listaPresentes = createContext(listaDePresentes);
+
+
+
+    // let giftList: Gift[] = listaDePresentes;
+
+    const [giftList, setGiftList] = useState<Gift[]>(listaDePresentes);
+
     // TEMP
     const [presenteCount, setPresenteCount] = useState(0);
 
@@ -49,13 +60,27 @@ function ListaPresentes() {
         setCartOpened(false);
     }
 
-    const addToCart = () => {
-        // setAlertClass('alert-opened');
-        setCarrinhoSize(carrinhoSize + 1);
 
-        // setTimeout(() => {
-        //     setAlertClass('alert-closed');
-        // }, 2000)
+
+    function addGiftToCart(giftName: string) {
+        setGiftList(giftList.map(gift => {
+            if (gift.nome === giftName) {
+                gift.quantidade = gift.quantidade + 1;
+            }
+            return gift;
+        }));
+
+        // (newGiftList);
+    }
+
+    function removeGiftFromCart(giftName: string) {
+        setGiftList(giftList.map(gift => {
+            if (gift.nome === giftName && gift.quantidade > 0) {
+                gift.quantidade = gift.quantidade - 1;
+            }
+
+            return gift;
+        }));
     }
 
     return (
@@ -63,62 +88,29 @@ function ListaPresentes() {
             <p className="main-text">
                 Em nossa Lua de Mel iremos para Ilhabela / SP.
             </p>
+            {/* 
+            <a onClick={() =>
+                giftList.map
+            }>
+                
+            </a> */}
 
-            <div className="presente-box">
-                <div className="presente-header">
-                    Passeio de Barco
-                </div>
-                <div className="presente-foto">
-                    <img src={passeioDeBarcoImb} alt="Passeio de Barco" />
-                </div>
-                <div className="presente-valor">
-                    R$ 100,00
-                </div>
-
-
-                <div className="presente-actions">
-                    <FontAwesomeIcon icon={faMinusCircle} size="1x" onClick={removePresente} />
-                    {presenteCount}
-                    <FontAwesomeIcon icon={faPlusCircle} size="1x" onClick={addPresente} />
-                </div>
-            </div>
-
-
-
-            {/* <div className="presente-box">
-                <div className="presente-header">
-                    Jantar Romântico
-                </div>
-                <div className="presente-foto">
-                    <img src={passeioDeBarcoImb} alt="Passeio de Barco" />
-                </div>
-                <div className="presente-valor">
-                    R$ 100,00
-                </div>
-
-
-                <div className="presente-actions">
-                    <FontAwesomeIcon icon={faPlusCircle} size="1x" /> Adicionar
-                </div>
-            </div> */}
-
-
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
+            {
+                giftList.map((gift, index) => {
+                    return (
+                        <Presente
+                            key={index}
+                            gift={gift}
+                            addGiftToCart={() => addGiftToCart(gift.nome)}
+                            removeGiftFromCart={() => removeGiftFromCart(gift.nome)}
+                        />
+                    )
+                })
+            }
 
 
 
-
-
-
-            <div className={cartButtonClass} onClick={openCart}>
-                <div className="carrinho-items">
-                    {carrinhoSize}
-                </div>
-                <FontAwesomeIcon icon={faShoppingCart} size="lg" />
-            </div>
+            < Cart key="" gifts={giftList} />
 
 
             {/* <div className={alertClass}>
@@ -134,137 +126,6 @@ function ListaPresentes() {
 
 
 
-            <div className={cartClass}>
-                <div className="carrinho-opened-box">
-                    <div className="carrinho-opened-header">
-
-                        Carrinho de Presentes
-                    </div>
-
-                    <div className="carrinho-opened-presentes">
-                        <div className="carrinho-opened-presentes-item-header">
-
-
-                            <h3>
-                                Qtd
-                            </h3>
-
-                            <h3>
-                                Descrição
-                            </h3>
-
-                            <h3>
-                                Valor
-                            </h3>
-                        </div>
-
-                        <div className="carrinho-opened-presentes-items">
-                            <div className="carrinho-opened-presentes-item">
-                                <div className="carrinho-opened-presentes-item-quantidade">
-                                    2
-                                </div>
-                                <div className="carrinho-opened-presentes-item-descricao">
-                                    Passeio de Barco
-                                </div>
-                                <div className="carrinho-opened-presentes-item-total">
-                                    200,00
-                                </div>
-                            </div>
-
-
-                            <div className="carrinho-opened-presentes-item">
-                                <div className="carrinho-opened-presentes-item-quantidade">
-                                    2
-                                </div>
-                                <div className="carrinho-opened-presentes-item-descricao">
-                                    Passeio de Barco
-                                </div>
-                                <div className="carrinho-opened-presentes-item-total">
-                                    200,00
-                                </div>
-                            </div>
-
-
-                            <div className="carrinho-opened-presentes-item">
-                                <div className="carrinho-opened-presentes-item-quantidade">
-                                    2
-                                </div>
-                                <div className="carrinho-opened-presentes-item-descricao">
-                                    Passeio de Barco
-                                </div>
-                                <div className="carrinho-opened-presentes-item-total">
-                                    200,00
-                                </div>
-                            </div>
-
-
-                            <div className="carrinho-opened-presentes-item">
-                                <div className="carrinho-opened-presentes-item-quantidade">
-                                    2
-                                </div>
-                                <div className="carrinho-opened-presentes-item-descricao">
-                                    Passeio de Barco
-                                </div>
-                                <div className="carrinho-opened-presentes-item-total">
-                                    200,00
-                                </div>
-                            </div>
-                            <div className="carrinho-opened-presentes-item">
-                                <div className="carrinho-opened-presentes-item-quantidade">
-                                    2
-                                </div>
-                                <div className="carrinho-opened-presentes-item-descricao">
-                                    Passeio de Barco
-                                </div>
-                                <div className="carrinho-opened-presentes-item-total">
-                                    200,00
-                                </div>
-                            </div>
-                            <div className="carrinho-opened-presentes-item">
-                                <div className="carrinho-opened-presentes-item-quantidade">
-                                    2
-                                </div>
-                                <div className="carrinho-opened-presentes-item-descricao">
-                                    Passeio de Barco
-                                </div>
-                                <div className="carrinho-opened-presentes-item-total">
-                                    200,00
-                                </div>
-                            </div>
-
-
-
-                        </div>
-
-                        <div className="carrinho-opened-presentes-items-footer">
-                            Total R$ 500,00
-                        </div>
-
-                    </div>
-
-                    <div className="carrinho-opened-actions">
-                        <div className="carrinho-opened-actions-esvaziar">
-                            <FontAwesomeIcon icon={faTrash} size="1x" />
-                            Esvaziar
-                        </div>
-
-                        <div className="carrinho-opened-actions-finalizar" onClick={closeCart}>
-                            <FontAwesomeIcon icon={faShoppingBag} size="1x" />
-                            Finalizar
-                        </div>
-
-
-                    </div>
-
-                    <p className="fechar-link" onClick={closeCart}>
-                        <FontAwesomeIcon icon={faArrowLeft} size="sm" />
-                        Voltar
-                    </p>
-
-                    <br></br>
-
-                </div>
-            </div>
         </div>
 
 

@@ -2,13 +2,13 @@
     "presentes": [{
             "nome": "Passeio de Barco",
             "imagem": "../../assets/presentes/passeio-de-barco.png",
-            "valor": "100",
+            "valor": 200,
             "quantidade": 0
         },
         {
             "nome": "Jantar Romatico",
             "imagem": "../../assets/presentes/jantar-romantico.png",
-            "valor": "500",
+            "valor": 500,
             "quantidade": 0
         }
     ]
