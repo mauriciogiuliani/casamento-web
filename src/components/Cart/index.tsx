@@ -29,7 +29,7 @@ const Cart: React.FC<CartProperties> = ({ gifts }) => {
             <div className={isOpened ? 'carrinho-box-hidden' : 'carrinho-box'} onClick={openCart}>
                 <div className="carrinho-items">
 
-                    {gifts.filter(gift => gift.quantidade > 0).length == 0 ? 0 :
+                    {gifts.filter(gift => gift.quantidade > 0).length === 0 ? 0 :
                         gifts.filter(
                             gift => gift.quantidade > 0).map(
                                 gift => {
@@ -74,7 +74,10 @@ const Cart: React.FC<CartProperties> = ({ gifts }) => {
                                         <ul>{gift.nome} </ul>
                                         <ul>R$ {gift.valor},00 </ul>
                                     </li>)
+                            } else {
+                                return;
                             }
+                            
                         }) :
 
                         <div className="cart-items-empty">
@@ -101,7 +104,7 @@ const Cart: React.FC<CartProperties> = ({ gifts }) => {
 
                     {gifts.filter(gift => gift.quantidade > 0).length > 0 ?
                         <div className="cart-footer-actions">
-                            <a>
+                            {/* <a>
                                 <FontAwesomeIcon icon={faTrash} size="1x" />
                                 Esvaziar
                             </a>
@@ -109,7 +112,7 @@ const Cart: React.FC<CartProperties> = ({ gifts }) => {
                             <a>
                                 <FontAwesomeIcon icon={faShoppingBag} size="1x" />
                                 Finalizar
-                            </a>
+                            </a> */}
                         </div>
                         : ''
                     }
