@@ -75,7 +75,7 @@ const Cart: React.FC<CartProperties> = ({ gifts }) => {
                                         <ul>R$ {gift.valor},00 </ul>
                                     </li>)
                             } else {
-                                return;
+                                return '';
                             }
                             
                         }) :
