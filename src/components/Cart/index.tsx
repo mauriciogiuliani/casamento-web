@@ -82,8 +82,8 @@ const Cart: React.FC<CartProperties> = ({ gifts }) => {
                                     return (
                                         <li key={index} className='cart-items-list'>
                                             <ul>{gift.quantidade} </ul>
-                                            <ul>{gift.nome} </ul>
-                                            <ul>R$ {gift.valor},00 </ul>
+                                            <ul className="cart-item-name">{gift.nome} </ul>
+                                            <ul>{gift.valor},00 </ul>
                                         </li>)
                                 } else {
                                     return '';
@@ -109,12 +109,15 @@ const Cart: React.FC<CartProperties> = ({ gifts }) => {
 
                         {gifts.filter(gift => gift.quantidade > 0).length > 0 ?
                             <div className="cart-footer-actions">
-                                
-                          
+
+
                                 <p>
-                                    Faça um Pix deste valor para a chave <b>01177247003</b>
+                                    Agradecemos por tornar nossa lua de mel mais especial. Faça um Pix deste valor para a chave:
                                 </p>
-                               
+                                <p> <b>01177247003</b>
+                                </p>
+
+
                             </div>
                             : ''
                         }
