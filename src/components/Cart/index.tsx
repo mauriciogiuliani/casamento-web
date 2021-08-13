@@ -5,6 +5,7 @@ import { Gift } from '../Presente';
 import './styles.css';
 
 
+
 export interface CartProperties {
     gifts: Gift[];
 }
@@ -108,9 +109,14 @@ const Cart: React.FC<CartProperties> = ({ gifts }) => {
 
                         {gifts.filter(gift => gift.quantidade > 0).length > 0 ?
                             <div className="cart-footer-actions">
+                                
+                            {/* <img src='../../../public/pix-banco-central-logo.svg'></img> */}
+
                                 <p>
-                                    Faça um Pix no valor de R$ R$ {sumTotal(gifts)},00
+                                    <b>Faça um Pix utilizando os dados abaixo:</b>
                                 </p>
+                                <p><b>Chave PIX: </b> 01177247003  </p>
+                                <p><b>Valor: </b> R$ {sumTotal(gifts)},00 </p>
                             </div>
                             : ''
                         }

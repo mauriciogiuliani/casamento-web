@@ -109,13 +109,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin: 25px 0px 10px 0px;
+    margin: 15px 0px 15px 0px;
     flex: 1;
 }
 
 .cart-footer .cart-footer-actions {
-    margin-bottom: 25px;
-    margin: 25px 0px;
+    margin: 0px 15px;
 }
 
 .cart-footer .cart-footer-actions>a {
@@ -134,12 +133,24 @@
     margin-right: 10px;
 }
 
+.cart-footer .cart-footer-actions>p:first-child {
+    margin-bottom: 10px;
+}
+
+.cart-footer .cart-footer-actions>p {
+    font-family: Indie Flower;
+    color: #9CB2A5;
+    font-size: large;
+    font-weight: 500;
+    margin: 0;
+}
+
 .cart-footer .cart-footer-close {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin: 100px 0px 15px 0px;
     color: #9cb2be;
+    margin: 30px 0px 10px 0px;
 }
 
 

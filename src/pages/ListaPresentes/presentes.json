@@ -9,5 +9,23 @@
         "imagem": "public/presentes/passeio-de-barco.png",
         "valor": 500,
         "quantidade": 0
+    },
+    {
+        "nome": "Baldinho de Cerveja",
+        "imagem": "public/presentes/passeio-de-barco.png",
+        "valor": 500,
+        "quantidade": 0
+    },
+    {
+        "nome": "Drinks",
+        "imagem": "public/presentes/passeio-de-barco.png",
+        "valor": 500,
+        "quantidade": 0
+    },
+    {
+        "nome": "Mergulho na Ilha do Peixe",
+        "imagem": "public/presentes/passeio-de-barco.png",
+        "valor": 500,
+        "quantidade": 0
     }
 ]
