@@ -1,11 +1,10 @@
 .presente-box {
     font-family: Indie Flower;
     background-color: #FFF;
-    width: 70%;
+    width: 87%;
     margin: auto;
     margin-bottom: 50px;
     border: 2px solid rgb(139 164 179 / 50%);
-    border-radius: 50px;
     box-shadow: -1px 0px 5px 1px rgb(139 164 179 / 30%);
 }
 
@@ -26,7 +25,7 @@
 .presente-box .presente-foto>img {
     height: 125px;
     width: 125px;
-    border-radius: 30px;
+    border-radius: 5px;
     box-shadow: -1px 1px 12px 0px rgb(139 164 179 / 80%);
 }
 
@@ -39,14 +38,12 @@
 }
 
 .presente-box .presente-actions {
-    margin: -2px;
+    margin: -1px;
     background-color: rgb(139 164 179 / 85%);
     height: 50px;
     color: #FFF;
     font-size: x-large;
     font-weight: 600;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;

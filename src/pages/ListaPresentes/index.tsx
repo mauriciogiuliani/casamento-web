@@ -12,55 +12,8 @@ import './styles.css';
 
 
 function ListaPresentes() {
-    // const listaPresentes = createContext(listaDePresentes);
-
-
-
-    // let giftList: Gift[] = listaDePresentes;
 
     const [giftList, setGiftList] = useState<Gift[]>(listaDePresentes);
-
-    // TEMP
-    const [presenteCount, setPresenteCount] = useState(0);
-
-    const addPresente = () => {
-        setPresenteCount(presenteCount + 1);
-        setCarrinhoSize(carrinhoSize + 1);
-    }
-
-    const removePresente = () => {
-        if (presenteCount > 0) {
-            setPresenteCount(presenteCount - 1);
-        }
-
-    }
-
-
-    const [carrinhoSize, setCarrinhoSize] = useState(0);
-    const [alertClass, setAlertClass] = useState('alert-closed');
-
-    const [cartClass, setCartClass] = useState('carrinho-closed');
-
-    const [cartOpened, setCartOpened] = useState(false);
-
-
-    // Carrinho Box
-    const [cartButtonClass, setCartButtonClass] = useState('carrinho-box');
-
-
-    const openCart = () => {
-        setCartClass('carrinho-opened');
-        setCartButtonClass('carrinho-box-hidden')
-        setCartOpened(true);
-    }
-
-    const closeCart = () => {
-        setCartClass('carrinho-closed');
-        setCartButtonClass('carrinho-box')
-        setCartOpened(false);
-    }
-
-
 
     function addGiftToCart(giftName: string) {
         setGiftList(giftList.map(gift => {
@@ -70,7 +23,6 @@ function ListaPresentes() {
             return gift;
         }));
 
-        // (newGiftList);
     }
 
     function removeGiftFromCart(giftName: string) {
@@ -84,49 +36,35 @@ function ListaPresentes() {
     }
 
     return (
-        <div className={cartOpened ? 'no-scroll' : ''}>
+        <div>
             <p className="main-text">
                 Em nossa Lua de Mel iremos para Ilhabela / SP.
             </p>
-            {/* 
-            <a onClick={() =>
-                giftList.map
-            }>
-                
-            </a> */}
 
-            {
-                giftList.map((gift, index) => {
-                    return (
-                        <Presente
-                            key={index}
-                            gift={gift}
-                            addGiftToCart={() => addGiftToCart(gift.nome)}
-                            removeGiftFromCart={() => removeGiftFromCart(gift.nome)}
-                        />
-                    )
-                })
-            }
+
+            <div className="gift-list">
+                {
+                    giftList.map((gift, index) => {
+                        return (
+                            <Presente
+                                key={index}
+                                gift={gift}
+                                addGiftToCart={() => addGiftToCart(gift.nome)}
+                                removeGiftFromCart={() => removeGiftFromCart(gift.nome)}
+                            />
+                        )
+                    })
+                }
+            </div>
+
 
 
 
             < Cart key="" gifts={giftList} />
 
 
-            {/* <div className={alertClass}>
-                <div className="alert-adicionar-item">
-                    <FontAwesomeIcon icon={faCheck} size="3x" />
-
-                    <p>
-                        Presente adicionado ao Carrinho!
-                    </p>
-
-                </div>
-            </div> */}
-
-
-
         </div>
+
 
 
 

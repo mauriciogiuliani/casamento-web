@@ -9,6 +9,8 @@ export interface CartProperties {
     gifts: Gift[];
 }
 
+// export 
+
 const Cart: React.FC<CartProperties> = ({ gifts }) => {
 
     const [isOpened, setIsOpened] = useState(false);
@@ -20,6 +22,13 @@ const Cart: React.FC<CartProperties> = ({ gifts }) => {
     function closeCart() {
         setIsOpened(false);
     }
+
+    function sumTotal(gifts: Gift[]): number {
+        return gifts.map(gift => {
+            return gift.valor * gift.quantidade;
+        }).reduce((total, next) => total + next)
+    }
+
 
     return (
 
@@ -46,174 +55,75 @@ const Cart: React.FC<CartProperties> = ({ gifts }) => {
 
 
             <div className={isOpened ? 'cart-opened' : 'cart-closed'}>
-                {/* <div id="cart-opened-overlay"></div> */}
-                <div className="cart-header">
-                    Carrinho de Presentes
-                </div>
-
-                <div className="cart-items">
-
-                    <li className="cart-items-header">
-                        <ul>
-                            Qtd
-                        </ul>
-                        <ul>
-                            Descrição
-                        </ul>
-                        <ul>
-                            Valor
-                        </ul>
-                    </li>
-
-                    {gifts.filter(gift => gift.quantidade > 0).length > 0 ?
-                        gifts.map((gift, index) => {
-                            if (gift.quantidade > 0) {
-                                return (
-                                    <li key={index} className='cart-items-list'>
-                                        <ul>{gift.quantidade} </ul>
-                                        <ul>{gift.nome} </ul>
-                                        <ul>R$ {gift.valor},00 </ul>
-                                    </li>)
-                            } else {
-                                return '';
-                            }
-                            
-                        }) :
-
-                        <div className="cart-items-empty">
-                            Carrinho Vazio
-                        </div>
-
-
-                    }
-
-                    <div className="cart-items-list-total">
-                        Total R$ {
-
-
-                            gifts.map(gift => {
-                                return gift.valor * gift.quantidade;
-                            }).reduce((total, next) => total + next)
-                        },00
-                    </div>
-                </div>
-
-
-                <div className="cart-footer">
-
-
-                    {gifts.filter(gift => gift.quantidade > 0).length > 0 ?
-                        <div className="cart-footer-actions">
-                            <a>
-                                <FontAwesomeIcon icon={faTrash} size="1x" />
-                                Limpar
-                            </a>
-
-                            <a>
-                                <FontAwesomeIcon icon={faShoppingBag} size="1x" />
-                                Confirmar
-                            </a>
-                        </div>
-                        : ''
-                    }
-
-
-                    <div className="cart-footer-close">
-                        <FontAwesomeIcon icon={faTimesCircle} size="2x" onClick={closeCart} />
-
-                        {/* <p className="fechar-link" onClick={closeCart}> */}
-
-
-                        {/* </p> */}
+                <div className="cart">
+                    {/* <div id="cart-opened-overlay"></div> */}
+                    <div className="cart-header">
+                        Carrinho de Presentes
                     </div>
 
-                    {/* <div className="carrinho-opened-actions">
-                        <div className="carrinho-opened-actions-esvaziar">
-                            <FontAwesomeIcon icon={faShoppingBag} size="1x" />
-                            Esvaziar
-                        </div>
+                    <div className="cart-items">
 
-                        <div className="carrinho-opened-actions-finalizar" onClick={closeCart}>
-                            <FontAwesomeIcon icon={faShoppingBag} size="1x" />
-                            Finalizar
-                        </div>
-
-
-
-                    </div> */}
-                </div>
-
-
-
-
-                {/* </div> */}
-
-
-
-                {/* <div className="carrinho-opened-presentes">
-                        <div className="carrinho-opened-presentes-item-header">
-                            <h3>
+                        <li className="cart-items-header">
+                            <ul>
                                 Qtd
-                            </h3>
-
-                            <h3>
+                            </ul>
+                            <ul>
                                 Descrição
-                            </h3>
-
-                            <h3>
+                            </ul>
+                            <ul>
                                 Valor
-                            </h3>
-                        </div>
+                            </ul>
+                        </li>
 
-                        <div className="carrinho-opened-presentes-items">
-                            {gifts.map((gift, index) => {
-                                return (
-                                    <li key={index} className='carrinho-opened-presentes-item'>
-                                        <ul>{gift.quantidade} </ul>
-                                        <ul>{gift.nome} </ul>
-                                        <ul>{gift.valor} </ul>
-                                    </li>)
-                            })}
+                        {gifts.filter(gift => gift.quantidade > 0).length > 0 ?
+                            gifts.map((gift, index) => {
+                                if (gift.quantidade > 0) {
+                                    return (
+                                        <li key={index} className='cart-items-list'>
+                                            <ul>{gift.quantidade} </ul>
+                                            <ul>{gift.nome} </ul>
+                                            <ul>R$ {gift.valor},00 </ul>
+                                        </li>)
+                                } else {
+                                    return '';
+                                }
 
+                            }) :
 
-
-                            {/* <div className="carrinho-opened-presentes-item-quantidade">
-                                2
+                            <div className="cart-items-empty">
+                                Carrinho Vazio
                             </div>
-                            <div className="carrinho-opened-presentes-item-descricao">
-                                Passeio de Barco
-                            </div>
-                            <div className="carrinho-opened-presentes-item-total">
-                                200,00
-                            </div> 
 
 
+                        }
 
-
-
+                        <div className="cart-items-list-total">
+                            Total R$ {sumTotal(gifts)},00
                         </div>
+                    </div>
 
-                        <div className="carrinho-opened-presentes-items-footer">
-                            Total R$ 500,00
+
+                    <div className="cart-footer">
+
+
+                        {gifts.filter(gift => gift.quantidade > 0).length > 0 ?
+                            <div className="cart-footer-actions">
+                                <p>
+                                    Faça um Pix no valor de R$ R$ {sumTotal(gifts)},00
+                                </p>
+                            </div>
+                            : ''
+                        }
+
+
+                        <div className="cart-footer-close">
+                            <FontAwesomeIcon icon={faTimesCircle} size="2x" onClick={closeCart} />
                         </div>
 
                     </div>
 
-                    <div className="carrinho-opened-actions">
-                        <div className="carrinho-opened-actions-esvaziar">
-                            <FontAwesomeIcon icon={faTrash} size="1x" />
-                            Esvaziar
-                        </div>
 
-                        <div className="carrinho-opened-actions-finalizar" onClick={closeCart}>
-                            <FontAwesomeIcon icon={faShoppingBag} size="1x" />
-                            Finalizar
-                        </div>
-
-
-                    </div> */}
-
-
+                </div>
 
             </div>
         </div>
