@@ -104,15 +104,15 @@ const Cart: React.FC<CartProperties> = ({ gifts }) => {
 
                     {gifts.filter(gift => gift.quantidade > 0).length > 0 ?
                         <div className="cart-footer-actions">
-                            {/* <a>
+                            <a>
                                 <FontAwesomeIcon icon={faTrash} size="1x" />
-                                Esvaziar
+                                Limpar
                             </a>
 
                             <a>
                                 <FontAwesomeIcon icon={faShoppingBag} size="1x" />
-                                Finalizar
-                            </a> */}
+                                Confirmar
+                            </a>
                         </div>
                         : ''
                     }
