@@ -123,7 +123,7 @@ const Cart: React.FC<CartProperties> = ({ gifts }) => {
                             <div className="cart-footer-actions">
 
                                 <p>
-                                    Faça um Pix para a chave abaixo:
+                                    Faça um Pix para a chave abaixo
                                 </p>
 
                                 <div className="cart-footer-pix">
