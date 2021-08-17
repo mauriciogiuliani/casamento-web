@@ -1,8 +1,10 @@
-import { faTrash, faShoppingBag, faShoppingCart, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
+import logoPixImg from '../../assets/logo-pix.png';
 import { Gift } from '../Presente';
 import './styles.css';
+
 
 
 
@@ -30,6 +32,10 @@ const Cart: React.FC<CartProperties> = ({ gifts }) => {
         }).reduce((total, next) => total + next)
     }
 
+
+    function isCartEmpty() {
+        return gifts.filter(gift => gift.quantidade > 0).length > 0 ? true : false;
+    }
 
     return (
 
@@ -59,7 +65,15 @@ const Cart: React.FC<CartProperties> = ({ gifts }) => {
                 <div className="cart">
                     {/* <div id="cart-opened-overlay"></div> */}
                     <div className="cart-header">
-                        Carrinho de Presentes
+                        <h1>
+                            Carrinho de Presentes
+                        </h1>
+
+                        {isCartEmpty() &&
+                            <p>
+                                Agradecemos por tornar nossa lua de mel mais especial.
+                            </p>
+                        }
                     </div>
 
                     <div className="cart-items">
@@ -76,7 +90,7 @@ const Cart: React.FC<CartProperties> = ({ gifts }) => {
                             </ul>
                         </li>
 
-                        {gifts.filter(gift => gift.quantidade > 0).length > 0 ?
+                        {isCartEmpty() ?
                             gifts.map((gift, index) => {
                                 if (gift.quantidade > 0) {
                                     return (
@@ -88,13 +102,11 @@ const Cart: React.FC<CartProperties> = ({ gifts }) => {
                                 } else {
                                     return '';
                                 }
-
                             }) :
 
                             <div className="cart-items-empty">
                                 Carrinho Vazio
                             </div>
-
 
                         }
 
@@ -107,19 +119,26 @@ const Cart: React.FC<CartProperties> = ({ gifts }) => {
                     <div className="cart-footer">
 
 
-                        {gifts.filter(gift => gift.quantidade > 0).length > 0 ?
+                        {isCartEmpty() &&
                             <div className="cart-footer-actions">
 
-
                                 <p>
-                                    Agradecemos por tornar nossa lua de mel mais especial. Faça um Pix deste valor para a chave:
-                                </p>
-                                <p> <b>01177247003</b>
+                                    Faça um Pix para a chave abaixo:
                                 </p>
 
+                                <div className="cart-footer-pix">
+                                    <img src={logoPixImg} alt="Pix" />
 
+                                    <div className="cart-footer-pix-details">
+                                        <p>
+                                            Mauricio Machado Giuliani
+                                        </p>
+                                        <p>
+                                            <b>CPF:</b> 01177247003
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            : ''
                         }
 
 

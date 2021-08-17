@@ -18,25 +18,7 @@ export interface GiftProps {
     removeGiftFromCart: Function;
 }
 
-
-// function setGift()
-// function addGift() {
-
-// }
-
-// function removeGift() {
-
-// }
-
 const Presente: React.FC<GiftProps> = (props) => {
-
-    // const [gift, setGift] = useState<Gift>({
-    //     nome: props.gift.nome,
-    //     valor: props.gift.valor,
-    //     imagem: props.gift.imagem,
-    //     quantidade: 0
-    // });
-
 
     return (
         <div className="presente-box">
@@ -44,9 +26,7 @@ const Presente: React.FC<GiftProps> = (props) => {
                 {props.gift.nome}
             </div>
             <div className="presente-foto">
-                <img src={passeioDeBarcoImb} alt="Passeio de Barco" />
-
-                {/* <img src={imagem} alt="Passeio de Barco" /> */}
+                <img src={props.gift.imagem} alt={props.gift.nome} />
             </div>
             <div className="presente-valor">
                 R$ {props.gift.valor},00

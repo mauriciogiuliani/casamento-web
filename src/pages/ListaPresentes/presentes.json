@@ -1,31 +1,91 @@
 [{
-        "nome": "Passeio de Barco",
-        "imagem": "../../assets/presentes/passeio-de-barco.png",
-        "valor": 200,
+        "nome": "Café da Manhã",
+        "imagem": "../presentes/cafe-da-manha.jpg",
+        "valor": 15,
         "quantidade": 0
     },
     {
-        "nome": "Jantar Romatico",
-        "imagem": "public/presentes/passeio-de-barco.png",
-        "valor": 500,
+        "nome": "Almoço no Hotel",
+        "imagem": "../presentes/almoco-hotel.jpg",
+        "valor": 40,
+        "quantidade": 0
+    },
+    {
+        "nome": "Jantar Romântico",
+        "imagem": "../presentes/jantar-romantico.jpg",
+        "valor": 250,
+        "quantidade": 0
+    },
+    {
+        "nome": "Camarão na Beira da Praia",
+        "imagem": "../presentes/camarao.png",
+        "valor": 80,
+        "quantidade": 0
+    },
+    {
+        "nome": "Espumante de Boas Vindas",
+        "imagem": "../presentes/espumante.jpeg",
+        "valor": 70,
         "quantidade": 0
     },
     {
         "nome": "Baldinho de Cerveja",
-        "imagem": "public/presentes/passeio-de-barco.png",
-        "valor": 500,
+        "imagem": "../presentes/baldinho-cerveja.jpg",
+        "valor": 60,
         "quantidade": 0
     },
     {
-        "nome": "Drinks",
-        "imagem": "public/presentes/passeio-de-barco.png",
-        "valor": 500,
+        "nome": "Drink na Piscina",
+        "imagem": "../presentes/drink-piscina.png",
+        "valor": 30,
         "quantidade": 0
     },
     {
-        "nome": "Mergulho na Ilha do Peixe",
-        "imagem": "public/presentes/passeio-de-barco.png",
-        "valor": 500,
+        "nome": "Mergulho Ilha das Cabras",
+        "imagem": "../presentes/mergulho.jpg",
+        "valor": 400,
+        "quantidade": 0
+    },
+    {
+        "nome": "Passeio Praia do Bonete",
+        "imagem": "../presentes/praia-bonete.jpg",
+        "valor": 200,
+        "quantidade": 0
+    },
+    {
+        "nome": "Passeio de Escuna",
+        "imagem": "../presentes/passeio-de-escuna.png",
+        "valor": 100,
+        "quantidade": 0
+    },
+    {
+        "nome": "Passeio de Lancha",
+        "imagem": "../presentes/passeio-de-lancha.jpg",
+        "valor": 300,
+        "quantidade": 0
+    },
+    {
+        "nome": "Hospedagem Ilhabela",
+        "imagem": "../presentes/hospedagem.jpg",
+        "valor": 1000,
+        "quantidade": 0
+    },
+    {
+        "nome": "Passagem Aérea",
+        "imagem": "../presentes/passagem-aerea.jpg",
+        "valor": 800,
+        "quantidade": 0
+    },
+    {
+        "nome": "Dia de SPA",
+        "imagem": "../presentes/spa.jpg",
+        "valor": 150,
+        "quantidade": 0
+    },
+    {
+        "nome": "Kit Repelente",
+        "imagem": "../presentes/repelente.png",
+        "valor": 20,
         "quantidade": 0
     }
 ]
