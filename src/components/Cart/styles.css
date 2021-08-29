@@ -143,9 +143,16 @@
     margin: 15px 0px;
 }
 
+/* .cart-footer-pix-details {} */
+
 .cart-footer-pix .cart-footer-pix-details>p {
     margin: 0;
     line-height: 1.5;
+}
+
+.cart-footer-pix .cart-footer-pix-details > p > a {
+    color: #9cb2be;
+    margin-left: 10px;
 }
 
 .cart-footer-pix .cart-footer-pix-details>p:last-child {

@@ -1,4 +1,4 @@
-import { faShoppingCart, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart, faTimesCircle, faCopy} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import logoPixImg from '../../assets/logo-pix.png';
@@ -135,6 +135,7 @@ const Cart: React.FC<CartProperties> = ({ gifts }) => {
                                         </p>
                                         <p>
                                             <b>CPF:</b> 01177247003
+                                            {/* <FontAwesomeIcon icon={faShoppingCart} size="lg" /> */}
                                         </p>
                                     </div>
                                 </div>
