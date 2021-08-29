@@ -33,10 +33,18 @@ function NossaHistoria() {
       </p>
       <img src={img} alt="A" />
       <p>
-        A vontade de somar um na vida do outro só aumenta, e por isso decidimos
-        passar para essa nova fase das nossas vidas com a oficialização da nossa
-        união - A celebração do nosso amor, junto com as pessoas que são
-        especiais na nossa vida
+        A vontade de somar um na vida do outro só
+        aumenta, e por isso decidimos passar para essa nova fase das nossas
+        vidas com a oficialização da nossa união e a celebração do nosso amor.
+        Agradecemos muito por cada um que nos acompanha nessa nossa jornada!
+        
+        <p>Com carinho,
+            <br></br>
+            Alice e Maurício
+        </p>
+        {/* <p></p> */}
+         
+        
       </p>
     </div>
   );

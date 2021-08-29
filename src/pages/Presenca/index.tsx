@@ -48,7 +48,7 @@ function Presenca() {
 
                     severinas.cerimonial@gmail.com
 
-                    <br></br>
+                    {/* <br></br>
                     <br></br>
                     <br></br>
                     <br></br>
@@ -56,7 +56,7 @@ function Presenca() {
                     <Link to="/">
                         <FontAwesomeIcon icon={faArrowLeft} size="sm" />
                         Voltar
-                    </Link>
+                    </Link> */}
 
                 </p>
             </div>
