@@ -69,11 +69,11 @@ const Cart: React.FC<CartProperties> = ({ gifts }) => {
                             Carrinho de Presentes
                         </h1>
 
-                        {isCartEmpty() &&
+                        {/* {isCartEmpty() &&
                             <p>
                                 Agradecemos por tornar nossa lua de mel mais especial.
                             </p>
-                        }
+                        } */}
                     </div>
 
                     <div className="cart-items">

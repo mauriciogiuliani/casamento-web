@@ -18,7 +18,7 @@ function Landing() {
                     Confirmar Presença
                 </Link>
 
-                <Link to="presenca" className="option-link">
+                <Link to="nossa-historia" className="option-link">
                     Nossa <br></br> História
                 </Link>
 
