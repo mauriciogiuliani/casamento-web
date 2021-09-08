@@ -40,7 +40,7 @@ function ListaPresentes() {
             <p className="main-text">
                 Em nossa lua de mel iremos para Ilhabela/SP.
                 <br></br>
-                Escolhemos algumas atrações, e se você quiser, pode contribuir para tornar nossa viagem ainda mais especial.
+                Escolhemos algumas atrações e, se você quiser, pode contribuir para tornar nossa viagem ainda mais especial.
             </p>
 
 
