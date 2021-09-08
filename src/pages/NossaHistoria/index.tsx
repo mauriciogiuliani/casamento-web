@@ -1,11 +1,9 @@
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { faArrowLeft, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import img_1 from "../../assets/nossa-historia1.jpeg";
+import img_2 from "../../assets/nossa-historia2.jpeg";
+import img_3 from "../../assets/nossa-historia3.jpeg";
 import "./styles.css";
 
-import img from "../../assets/presentes/passeio-de-barco.png";
 
 function NossaHistoria() {
   useEffect(() => {
@@ -20,7 +18,7 @@ function NossaHistoria() {
         frequentes...
       </p>
 
-      <img src={img} alt="A" />
+      <img src={img_1} alt="Nossa Historia" />
 
       <p>
         Fomos nos conhecendo e nos apaixonando, cada um com seu jeito e sua
@@ -31,21 +29,24 @@ function NossaHistoria() {
         nos une são nossas semelhanças, nosso amor e nosso compromisso um com o
         outro.
       </p>
-      <img src={img} alt="A" />
+      <img src={img_2} alt="Nossa Historia" />
       <p>
         A vontade de somar um na vida do outro só
         aumenta, e por isso decidimos passar para essa nova fase das nossas
         vidas com a oficialização da nossa união e a celebração do nosso amor.
         Agradecemos muito por cada um que nos acompanha nessa nossa jornada!
         
+        </p>
+
+        <img src={img_3} alt="Nossa Historia" />
+        
         <p>Com carinho,
             <br></br>
             Alice e Maurício
         </p>
-        {/* <p></p> */}
          
         
-      </p>
+      
     </div>
   );
 }

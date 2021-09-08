@@ -19,7 +19,8 @@
     text-align: center;
 }
 
-#nossa-historia *:last-child *:last-child {
+#nossa-historia *:last-child  {
     margin: 45px 0px 0px 0px;
     text-align: left;
+    width: 100%;
 }

@@ -14,12 +14,15 @@ function Presenca() {
         window.scrollTo(0,0);
     });
     
+
+    const whatsAppLink = "https://wa.me/5551991651225?text=" + encodeURI("Olá!\nGostaria de confirmar minha presença para o casamento da Alice e Mauricio.")
+
     return (
 
 
         <div className="main">
             <p className="main-text">
-                Confirme sua presença até o dia <b>10/10/2021</b> entrando em contato com o cerimionial através de E-mail ou What's App.
+                Confirme sua presença até o dia <b>18/10/2021</b> entrando em contato com o cerimionial através de E-mail ou What's App.
             </p>
 
 
@@ -30,7 +33,7 @@ function Presenca() {
                 </a>
 
 
-                <a href="https://wa.me/5551991651225" className="confimar-link">
+                <a href={whatsAppLink} className="confimar-link">
                     <FontAwesomeIcon icon={faWhatsapp} />
                     What'sApp
                 </a>

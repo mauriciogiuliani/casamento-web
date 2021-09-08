@@ -1,13 +1,13 @@
 [{
         "nome": "Café da Manhã",
         "imagem": "../presentes/cafe-da-manha.jpg",
-        "valor": 15,
+        "valor": 35,
         "quantidade": 0
     },
     {
         "nome": "Almoço no Hotel",
         "imagem": "../presentes/almoco-hotel.jpg",
-        "valor": 40,
+        "valor": 80,
         "quantidade": 0
     },
     {
@@ -19,7 +19,7 @@
     {
         "nome": "Camarão na Beira da Praia",
         "imagem": "../presentes/camarao.png",
-        "valor": 80,
+        "valor": 100,
         "quantidade": 0
     },
     {
@@ -37,7 +37,7 @@
     {
         "nome": "Drink na Piscina",
         "imagem": "../presentes/drink-piscina.png",
-        "valor": 30,
+        "valor": 45,
         "quantidade": 0
     },
     {
@@ -49,13 +49,13 @@
     {
         "nome": "Passeio Praia do Bonete",
         "imagem": "../presentes/praia-bonete.jpg",
-        "valor": 200,
+        "valor": 280,
         "quantidade": 0
     },
     {
         "nome": "Passeio de Escuna",
         "imagem": "../presentes/passeio-de-escuna.png",
-        "valor": 100,
+        "valor": 120,
         "quantidade": 0
     },
     {
@@ -79,13 +79,13 @@
     {
         "nome": "Dia de SPA",
         "imagem": "../presentes/spa.jpg",
-        "valor": 150,
+        "valor": 200,
         "quantidade": 0
     },
     {
         "nome": "Kit Repelente",
         "imagem": "../presentes/repelente.png",
-        "valor": 20,
+        "valor": 25,
         "quantidade": 0
     }
 ]
