@@ -21,7 +21,7 @@ code {
     font-size: 22px;
 }
 
-@media(min-width: 500px) {
+@media(min-width: 700px) {
     .App-Main > div:first-child{
         width: 370px;
         text-align: center;
