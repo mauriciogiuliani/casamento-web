@@ -8,6 +8,8 @@
 #nossa-historia img {
     height: 75%;
     width: 75%;
+    max-width: 75%;
+    max-height: 75%;
     border-radius: 5px;
     box-shadow: -1px 1px 12px 0px rgb(97 97 97 / 80%);
 }

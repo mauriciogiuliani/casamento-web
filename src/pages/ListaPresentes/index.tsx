@@ -1,6 +1,4 @@
-import { faArrowLeft, faShoppingBag, faTrash } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { createContext, useState } from 'react';
+import React, { useState } from 'react';
 import Cart from '../../components/Cart';
 import Presente, { Gift } from '../../components/Presente';
 import listaDePresentes from './presentes.json';
