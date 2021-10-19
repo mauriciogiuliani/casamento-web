@@ -22,7 +22,7 @@ function Presenca() {
 
         <div className="main">
             <p className="main-text">
-                Confirme sua presença até o dia <b>18/10/2021</b> entrando em contato com o cerimionial através de E-mail ou What's App.
+                Confirme sua presença entrando em contato com o cerimionial através de E-mail ou What's App.
             </p>
 
 
