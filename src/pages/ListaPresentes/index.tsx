@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Cart from '../../components/Cart';
 import Presente, { Gift } from '../../components/Presente';
 import listaDePresentes from './presentes.json';
+import img_lista from "../../assets/3ListadePresentes.jpg";
 import './styles.css';
 
 
@@ -36,9 +37,9 @@ function ListaPresentes() {
     return (
         <div>
             <p className="main-text">
-                Em nossa lua de mel iremos para Ilhabela/SP.
-                <br></br>
-                Escolhemos algumas atrações e, se você quiser, pode contribuir para tornar nossa viagem ainda mais especial.
+                <strong>LISTA DE PRESENTES</strong>
+                <br/><br/>
+                Hora pra ajudar os pobres noivos!!!
             </p>
 
 
@@ -56,9 +57,6 @@ function ListaPresentes() {
                     })
                 }
             </div>
-
-
-
 
             < Cart key="" gifts={giftList} />
 

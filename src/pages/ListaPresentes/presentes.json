@@ -1,91 +1,133 @@
 [{
-        "nome": "Café da Manhã",
-        "imagem": "../presentes/cafe-da-manha.jpg",
-        "valor": 35,
+        "nome": "ÁGUA DE COCO: PORQUE É PRECISO SE HIDRATAR SEMPRE",
+        "imagem": "../presentes/aguacoco.jpeg",
+        "valor": 25,
         "quantidade": 0
     },
     {
-        "nome": "Almoço no Hotel",
-        "imagem": "../presentes/almoco-hotel.jpg",
-        "valor": 80,
+        "nome": "BALDIN DE CERVEJA PRO FRED",
+        "imagem": "../presentes/baldeFred.jpeg",
+        "valor": 50,
         "quantidade": 0
     },
     {
-        "nome": "Jantar Romântico",
-        "imagem": "../presentes/jantar-romantico.jpg",
-        "valor": 250,
-        "quantidade": 0
-    },
-    {
-        "nome": "Camarão na Beira da Praia",
-        "imagem": "../presentes/camarao.png",
-        "valor": 100,
-        "quantidade": 0
-    },
-    {
-        "nome": "Espumante de Boas Vindas",
-        "imagem": "../presentes/espumante.jpeg",
-        "valor": 70,
-        "quantidade": 0
-    },
-    {
-        "nome": "Baldinho de Cerveja",
-        "imagem": "../presentes/baldinho-cerveja.jpg",
+        "nome": "BALDIN DE CERVEJA PRA ANA",
+        "imagem": "../presentes/baldeAna.jpeg",
         "valor": 60,
         "quantidade": 0
     },
     {
-        "nome": "Drink na Piscina",
-        "imagem": "../presentes/drink-piscina.png",
+        "nome": "DRINKS (ÁLCOOL NUNCA É DEMAIS)",
+        "imagem": "../presentes/drink.jpeg",
+        "valor": 80,
+        "quantidade": 0
+    },
+    {
+        "nome": "LINGERIE DA NOIVA PARA AS NÚPCIAS",
+        "imagem": "../presentes/langeriNoiva.jpeg",
+        "valor": 90,
+        "quantidade": 0
+    },
+    {
+        "nome": "LINGERIE DO NOIVO PARA AS NÚPCIAS",
+        "imagem": "../presentes/langeriNoivo.jpeg",
+        "valor": 110,
+        "quantidade": 0
+    },
+    {
+        "nome": "JANTAR ROMÂNTICO: UM MOMENTO INESQUECÍVEL À DOIS",
+        "imagem": "../presentes/jantar.jpeg",
+        "valor": 250,
+        "quantidade": 0
+    },
+    {
+        "nome": "CAFÉ DA MANHÃ EM HOTEL 5 ESTRELAS PARA CELEBRAR AS NÚPCIAS",
+        "imagem": "../presentes/cafeDaManha.jpeg",
         "valor": 45,
         "quantidade": 0
     },
     {
-        "nome": "Mergulho Ilha das Cabras",
-        "imagem": "../presentes/mergulho.jpg",
-        "valor": 400,
+        "nome": "GASOLINA PARA IRMOS À BAHIA E PEGARMOS UM BRONZE",
+        "imagem": "../presentes/gasolina.jpeg",
+        "valor": 100,
         "quantidade": 0
     },
     {
-        "nome": "Passeio Praia do Bonete",
-        "imagem": "../presentes/praia-bonete.jpg",
-        "valor": 280,
-        "quantidade": 0
-    },
-    {
-        "nome": "Passeio de Escuna",
-        "imagem": "../presentes/passeio-de-escuna.png",
-        "valor": 120,
-        "quantidade": 0
-    },
-    {
-        "nome": "Passeio de Lancha",
-        "imagem": "../presentes/passeio-de-lancha.jpg",
-        "valor": 300,
-        "quantidade": 0
-    },
-    {
-        "nome": "Hospedagem Ilhabela",
-        "imagem": "../presentes/hospedagem.jpg",
-        "valor": 1000,
-        "quantidade": 0
-    },
-    {
-        "nome": "Passagem Aérea",
-        "imagem": "../presentes/passagem-aerea.jpg",
-        "valor": 800,
-        "quantidade": 0
-    },
-    {
-        "nome": "Dia de SPA",
-        "imagem": "../presentes/spa.jpg",
+        "nome": "MALA DE VIAGEM",
+        "imagem": "../presentes/malas.jpeg",
         "valor": 200,
         "quantidade": 0
     },
     {
-        "nome": "Kit Repelente",
-        "imagem": "../presentes/repelente.png",
-        "valor": 25,
+        "nome": "DAY SPA (MERECEMOS!)",
+        "imagem": "../presentes/spa.jpeg",
+        "valor": 300,
+        "quantidade": 0
+    },
+    {
+        "nome": "MERGULHO PARA APROVEITAR ATÉ DE BAIXO D’ÁGUA",
+        "imagem": "../presentes/mergulho.jpeg",
+        "valor": 550,
+        "quantidade": 0
+    },
+    {
+        "nome": "ALUGUEL DE CARRO PRA NÃO TER QUE PASSAR PERRENGUE",
+        "imagem": "../presentes/alguelcarro.jpeg",
+        "valor": 700,
+        "quantidade": 0
+    },
+    {
+        "nome": "UM NOITE NO CASSINO PRO FRED TER MAIS UMA FICHA NA CARTEIRA DELE (DIZ QUE DÁ SORTE – DEVE SER NO AMOR PQ NO JOGO...)",
+        "imagem": "../presentes/cassino.jpeg",
+        "valor": 1000,
+        "quantidade": 0
+    },
+    {
+        "nome": "KIT FERRAMENTAS PRO NOIVO SE EMPENHAR NOS AJUSTES DA CASA",
+        "imagem": "../presentes/ferramentas.jpeg",
+        "valor": 275,
+        "quantidade": 0
+    },
+    {
+        "nome": "KIT CHURRASCO PRA ACOMPANHAR A CHURRASQUEIRA TOP DO NOIVO ",
+        "imagem": "../presentes/churrasco.jpeg",
+        "valor": 180,
+        "quantidade": 0
+    },
+    {
+        "nome": "APARELHO DE JANTAR PRA NOIVA FICAR EM PAZ COM OS CONJUNTOS COMBINANDO",
+        "imagem": "../presentes/aparelhoJantar.jpeg",
+        "valor": 200,
+        "quantidade": 0
+    },
+    {
+        "nome": "ESPELHO DE CORPO INTEIRO PARA O QUARTO DOS NOIVOS",
+        "imagem": "../presentes/espelho.jpeg",
+        "valor": 350,
+        "quantidade": 0
+    },
+    {
+        "nome": "INVESTIMENTO COM O LOBO DE WALL STREET (OU TORRAR COM ELE)",
+        "imagem": "../presentes/lobo.jpeg",
+        "valor": 500,
+        "quantidade": 0
+    },
+    {
+        "nome": "AULAS DE ECONOMIA DOMÉSTICA PARA A ANA COM JULIUS",
+        "imagem": "../presentes/julius.jpeg",
+        "valor": 10,
+        "quantidade": 0
+    },
+    {
+        "nome": "CHILDREN EXPERIENCE",
+        "imagem": "../presentes/filhos.jpeg",
+        "valor": 550,
+        "quantidade": 0
+    },
+    {
+        "nome": "INTERVENÇÃO DIVINA",
+        "imagem": "../presentes/divino.jpeg",
+        "valor": 1500,
         "quantidade": 0
     }
 ]

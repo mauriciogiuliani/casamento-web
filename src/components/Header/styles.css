@@ -5,19 +5,15 @@
 }
 
 .header-logo-text {
-    font-family: Rushtick;
-    font-size: 46px;
+    font-family: 'Pompiere';
+    font-size: 80px;
     text-align: center;
-    margin: 35px 15px;
-    color: #8BA4B3;
-    font-weight: 600;
+    margin: 35px 15px 0px 10px;
+    color: #3d3d3d;
+    font-weight: 400;
+    text-shadow: 0.1em 0.1em 0.1em #a8a8a8;
 }
 
 img {
-    height: 50px;
+    height: 85px;
 }
-
-
-/* .cordasImg {
-  height: 220px;
- } */

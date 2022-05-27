@@ -1,15 +1,16 @@
 import React from 'react';
-import cordas from '../../assets/test1.png';
+import cordas from '../../assets/eucalipto.png';
 import './styles.css';
+
 
 
 function Header() {
     return (
 
             <header className="header">
-
+                
                 <p className="header-logo-text">
-                    Alice e Mauricio
+                    ANA & FRED
                 </p>
 
                 <img src={cordas} alt="Imagem" className="cordasImg" />

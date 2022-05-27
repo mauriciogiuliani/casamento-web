@@ -1,11 +1,11 @@
-#nossa-historia {
+#traje {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 15px;
 }
 
-#nossa-historia img {
+#traje img {
     height: 75%;
     width: 75%;
     max-width: 75%;
@@ -14,14 +14,14 @@
     box-shadow: -1px 1px 12px 0px rgb(97 97 97 / 80%);
 }
 
-#nossa-historia p {
+#traje p {
     font-family: 'Nunito Sans';
     font-size: 20px;
     color: #3d3d3d;
     text-align: center;
 }
 
-#nossa-historia *:last-child  {
+#traje *:last-child  {
     margin: 45px 0px 0px 0px;
     text-align: left;
     width: 100%;

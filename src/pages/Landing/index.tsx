@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import img_inicial from "../../assets/0PaginaInicial.jpg";
 import './styles.css';
 
 function Landing() {
@@ -10,24 +11,39 @@ function Landing() {
 
         <div className="main">
             <p className="main-text">
-                Uma nova fase de nossas vidas irá iniciar e existem pessoas que consideramos especiais para compartilhar conosco tantos momentos que virão. Por isso sua presença é muito importante para nós.
+            É com muito amor e carinho que convidamos você para estar conosco no nosso casamento. São 7 anos juntos de parceria e não poderíamos deixar de oficializar nosso amor. A contagem regressiva começa junto com o frio na barriga e toda a ansiedade desse dia tão esperado em nossas vidas. Não poderíamos deixar de tê-lo ao nosso lado. Vamos juntos comemorar e curtir esse grande dia!
             </p>
 
             <div className="options">
                 <Link to="presenca" className="option-link">
-                    Confirmar Presença
+                    CONFIRME SUA PRESENÇA
                 </Link>
 
                 <Link to="nossa-historia" className="option-link">
-                    Nossa <br></br> História
+                    UM POUCO SOBRE NÓS
                 </Link>
 
                 <Link to="lista-presentes" className="option-link">
-                    Lista de Presentes
+                    LISTA DE PRESENTES
+                </Link>
+
+                <Link to="hashtag" className="option-link">
+                    #HASHTAG
+                </Link>
+
+                <Link to="traje" className="option-link">
+                    TRAJE
+                </Link>
+
+                <Link to="cerimonia" className="option-link">
+                    CERIMÔNIA E FESTA
                 </Link>
             </div>
-
-
+            
+            <div id='paginaInicial'>
+                <img src={img_inicial} alt="Bem Vindo Ao Casamento da Ana e do Fred" title='Bem Vindo Ao Casamento da Ana e do Fred'/>
+            </div>
+        
         </div>
 
     );

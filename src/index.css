@@ -23,7 +23,7 @@ code {
 
 @media(min-width: 700px) {
     .App-Main > div:first-child{
-        width: 370px;
+        width: 85%;
         text-align: center;
     }
 }

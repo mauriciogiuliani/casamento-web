@@ -96,7 +96,7 @@ const Cart: React.FC<CartProperties> = ({ gifts }) => {
                                     return (
                                         <li key={index} className='cart-items-list'>
                                             <ul>{gift.quantidade} </ul>
-                                            <ul className="cart-item-name">{gift.nome} </ul>
+                                            <ul className="cart-item-name"> {gift.nome} </ul>
                                             <ul>{gift.valor},00 </ul>
                                         </li>)
                                 } else {
@@ -131,10 +131,10 @@ const Cart: React.FC<CartProperties> = ({ gifts }) => {
 
                                     <div className="cart-footer-pix-details">
                                         <p>
-                                            Mauricio Machado Giuliani
+                                            Frederico Luís Cappellari
                                         </p>
                                         <p>
-                                            <b>CPF:</b> 01177247003
+                                            <b>Celular:</b> 51993219927
                                             {/* <FontAwesomeIcon icon={faShoppingCart} size="lg" /> */}
                                         </p>
                                     </div>

@@ -1,6 +1,13 @@
 @font-face {
-  font-family: 'Rushtick';
-  src: url('assets/Rushtick.ttf') format('truetype');
+  font-family: 'Pompiere';
+  src: url('assets/Pompiere-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url('assets/NunitoSans-ExtraLight.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

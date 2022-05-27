@@ -3,7 +3,7 @@
 }
 
 .fechar-link {
-    font-family: Indie Flower;
+    font-family: 'Pompiere';
     text-decoration: none;
     color: #8BA4B3;
     font-size: 22px;
@@ -13,4 +13,13 @@
 
 .fechar-link svg {
     margin-right: 5px;
+}
+
+#listaPresente img {
+    height: 75%;
+    width: 75%;
+    max-width: 75%;
+    max-height: 75%;
+    border-radius: 5px;
+    box-shadow: -1px 1px 12px 0px rgb(97 97 97 / 80%);
 }

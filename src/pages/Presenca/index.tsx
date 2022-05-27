@@ -1,8 +1,8 @@
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faArrowLeft, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import img_confirma from "../../assets/1ConfirmasuaPresenca.jpeg";
 import './styles.css';
 
 
@@ -15,60 +15,33 @@ function Presenca() {
     });
     
 
-    const whatsAppLink = "https://wa.me/5551991651225?text=" + encodeURI("Olá!\nGostaria de confirmar minha presença para o casamento da Alice e Mauricio.")
-
     return (
 
 
         <div className="main">
             <p className="main-text">
-                Confirme sua presença entrando em contato com o cerimionial através de E-mail ou What's App.
+            Para confirmar a sua presença no casamento, envie um e-mail para <strong>rsvp@murielbernardes.com</strong> até dia <strong>02/10/22</strong>.  
+            <br/>
+            <u>Assunto do e-mail:</u> Casamento Ana e Fred - 22/10/22
+            <br/>
+            <u>Corpo do e-mail:</u> Nome Completo
+            <br/><br/>
+            Será incrível ter você com a gente para sentir ainda mais a emoção desse momento tão especial! Mas entendemos caso não consiga comparecer. <u>Por gentileza, só confirme se tiver certeza que irá.</u>
+            <br/><br/>
+            Se tiver qualquer pergunta ou quer comentar algo, escreva neste mesmo e-mail para nossa cerimonialista Muriel Bernardes, tenho certeza que ela irá te auxiliar da melhor forma.
             </p>
 
-
             <div className="actions-box">
-                <a href="mailto:severinas.cerimonial@gmail.com" className="voltar-link">
+                <a href="mailto:rsvp@murielbernardes.com?subject=Casamento Ana e Fred - 22/10/22" className="voltar-link">
                     <FontAwesomeIcon icon={faEnvelope} />
-                    E-Mail
+                    E-MAIL
                 </a>
 
-
-                <a href={whatsAppLink} className="confimar-link">
-                    <FontAwesomeIcon icon={faWhatsapp} />
-                    What'sApp
-                </a>
             </div>
-
-            <div className="contatos-box">
-
-                <p>
-
-                    (51) 99165-1225
-
-
-                    <br></br>
-
-
-                    severinas.cerimonial@gmail.com
-
-                    {/* <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    
-                    <Link to="/">
-                        <FontAwesomeIcon icon={faArrowLeft} size="sm" />
-                        Voltar
-                    </Link> */}
-
-                </p>
+            <div id="presenca">
+                <img src={img_confirma} alt="Deitados no chão... que bonito..." title='Deitados no chão... que bonito...' />
             </div>
-
-
         </div>
-
-
-
 
     );
 }
