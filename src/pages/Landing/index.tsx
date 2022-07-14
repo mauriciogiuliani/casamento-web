@@ -39,10 +39,6 @@ function Landing() {
                     CERIMÔNIA E FESTA
                 </Link>
             </div>
-            
-            <div id='paginaInicial'>
-                <img src={img_inicial} alt="Bem Vindo Ao Casamento da Ana e do Fred" title='Bem Vindo Ao Casamento da Ana e do Fred'/>
-            </div>
         
         </div>
 
