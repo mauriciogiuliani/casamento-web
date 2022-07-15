@@ -12,10 +12,12 @@ function HashTag() {
   return (
     <div id="hashtag">
       <p>
-        Terá uma interação com as fotos na festa e com a hashtag ficará fácil achar o registros de todos os momentos lindos desse dia!
+        Fizemos nossa Hashtag! Assim ficará mais fácil achar todas as fotos que compartilharem em suas redes!
         <br/>
-        Nas fotos do dia do nosso casamento que postar no feed do Instagram use:
+        Mas não é só isso, terá uma <u>interação com as fotos que postarem no feed do Instagram</u>.
         <br/>
+        Quem não tem Instagram, tá na hora de criar! Brincadeira (não é não heheh)... Terão como interagir também, serão informados no dia da festa como.
+        <br/><br/>
         <strong>#AnaeFred22</strong>
       </p>
       <img src={img_hashtag} alt="Se liga na Aliança Cumpadi!" title="Se liga na Aliança Cumpadi!"/>

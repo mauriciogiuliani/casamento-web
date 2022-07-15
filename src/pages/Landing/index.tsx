@@ -11,7 +11,10 @@ function Landing() {
 
         <div className="main">
             <p className="main-text">
-            É com muito amor e carinho que convidamos você para estar conosco no nosso casamento. São 7 anos juntos de parceria e não poderíamos deixar de oficializar nosso amor. A contagem regressiva começa junto com o frio na barriga e toda a ansiedade desse dia tão esperado em nossas vidas. Não poderíamos deixar de tê-lo ao nosso lado. Vamos juntos comemorar e curtir esse grande dia!
+            É com muito amor e carinho que convidamos você para estar conosco no nosso casamento. <br/>
+            São 7 anos juntos de parceria e não poderíamos deixar de oficializar o nosso amor. <br/>
+            A contagem regressiva começa junto com o frio na barriga e toda a ansiedade desse dia tão esperado em nossas vidas. <br/>
+            Não poderíamos deixar de tê-lo ao nosso lado... Vamos juntos comemorar e curtir esse grande dia!
             </p>
 
             <div className="options">

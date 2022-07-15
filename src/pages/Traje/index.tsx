@@ -20,7 +20,7 @@ function Traje() {
       <u>Ela:</u>
       - O uso de vestido longo é opcional;
       <br/>
-      - Lembre-se que a cerimônia começa de dia, recomendamos um look que combine com a leveza do campo, e sapatos com salto grosso, pois teremos um lindo gramado como cenário;
+      - Lembre-se que a cerimônia começa de dia, recomendamos um look que combine com a leveza da natureza, e sapatos com salto grosso, pois teremos um lindo gramado como cenário;
       <br/>
       - Evite: salto fino, cores branco e azul claro;
       <br/>
