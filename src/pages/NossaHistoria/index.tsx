@@ -27,7 +27,7 @@ function NossaHistoria() {
       </p>
       <img src={img_3} alt="Nossa Historia" title="Bejin Bejin"/>
       <p>
-      Em 2021, contrataram a cerimonialista pois já estavam certos que iriam casar em 2022. E o noivado? Nada... Passou quase 3 meses, já tinham o local, já sabiam como seria o casamento, tinham a lista de convidados e padrinhos encaminhadas, e nada de serem noivos. Até que no dia 22/10/21 o Fred surpreende a Ana, engana ela direitinho e faz o pedido de casamento!
+      Estavam certos que iriam casar em 2022. E o noivado? Nada... Passou quase 3 meses, já tinham o local, já sabiam como seria o casamento, tinham a lista de convidados e padrinhos encaminhadas, e nada de serem noivos. Até que o Fred surpreende a Ana, engana ela direitinho e faz o pedido de casamento!
       </p>
       <img src={img_4} alt="Nossa Historia" title="corre vamo sair desse mato logo mulher...."/>
       <p>

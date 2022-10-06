@@ -20,7 +20,7 @@ function Presenca() {
 
         <div className="main">
             <p className="main-text">
-            Para confirmar a sua presença no casamento, envie um e-mail para <strong>rsvp@murielbernardes.com</strong> até dia <strong>02/10/22</strong>.  
+            Para confirmar a sua presença no casamento, envie um e-mail para <strong>rsvp@murielbernardes.com</strong> até dia <strong>07/10/22</strong>.  
             <br/>
             Assunto do e-mail: Casamento Ana e Fred - 22/10/22
             <br/>

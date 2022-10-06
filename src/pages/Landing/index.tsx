@@ -18,10 +18,6 @@ function Landing() {
             </p>
 
             <div className="options">
-                <Link to="presenca" className="option-link">
-                    CONFIRME SUA PRESENÇA
-                </Link>
-
                 <Link to="nossa-historia" className="option-link">
                     UM POUCO SOBRE NÓS
                 </Link>
